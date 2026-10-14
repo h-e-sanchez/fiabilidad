@@ -1,0 +1,298 @@
+tarea_id,componente_id,tipo_tarea,frecuencia_dias,fecha_inicio,descripcion
+T0001,C001,inspeccion,45,2025-10-18,Inspección de rodamiento
+T0002,C002,inspeccion,30,2025-10-04,Inspección de sello mecánico
+T0003,C002,recambio,132,2025-10-23,Recambio de sello mecánico
+T0004,C003,inspeccion,30,2025-10-01,Inspección de correa transportadora
+T0005,C004,inspeccion,90,2025-12-17,Inspección de motor eléctrico
+T0006,C004,recambio,546,2025-10-28,Recambio de motor eléctrico
+T0007,C005,inspeccion,60,2025-10-27,Inspección de válvula de control
+T0008,C006,inspeccion,60,2025-11-21,Inspección de sensor de proceso
+T0009,C006,recambio,254,2026-05-11,Recambio de sensor de proceso
+T0010,C007,inspeccion,90,2025-12-29,Inspección de contactor
+T0011,C007,recambio,361,2026-05-05,Recambio de contactor
+T0012,C008,inspeccion,30,2025-10-25,Inspección de filtro de línea
+T0013,C008,recambio,66,2025-11-13,Recambio de filtro de línea
+T0014,C009,inspeccion,45,2025-10-23,Inspección de rodamiento
+T0015,C009,recambio,191,2025-12-28,Recambio de rodamiento
+T0016,C010,inspeccion,30,2025-10-24,Inspección de sello mecánico
+T0017,C011,inspeccion,30,2025-10-30,Inspección de correa transportadora
+T0018,C011,recambio,49,2025-10-25,Recambio de correa transportadora
+T0019,C012,inspeccion,90,2025-12-20,Inspección de motor eléctrico
+T0020,C012,recambio,557,2026-10-06,Recambio de motor eléctrico
+T0021,C013,inspeccion,60,2025-10-03,Inspección de válvula de control
+T0022,C014,inspeccion,60,2025-10-06,Inspección de sensor de proceso
+T0023,C015,inspeccion,90,2025-11-18,Inspección de contactor
+T0024,C016,inspeccion,30,2025-10-12,Inspección de filtro de línea
+T0025,C016,recambio,77,2025-10-21,Recambio de filtro de línea
+T0026,C017,inspeccion,45,2025-10-18,Inspección de rodamiento
+T0027,C017,recambio,82,2025-10-10,Recambio de rodamiento
+T0028,C018,inspeccion,30,2025-10-18,Inspección de sello mecánico
+T0029,C019,inspeccion,30,2025-10-15,Inspección de correa transportadora
+T0030,C020,inspeccion,90,2025-12-21,Inspección de motor eléctrico
+T0031,C020,recambio,358,2026-09-18,Recambio de motor eléctrico
+T0032,C021,inspeccion,60,2025-11-23,Inspección de válvula de control
+T0033,C022,inspeccion,60,2025-10-15,Inspección de sensor de proceso
+T0034,C023,inspeccion,90,2025-11-21,Inspección de contactor
+T0035,C024,inspeccion,30,2025-10-19,Inspección de filtro de línea
+T0036,C024,recambio,68,2025-11-10,Recambio de filtro de línea
+T0037,C025,inspeccion,45,2025-11-11,Inspección de rodamiento
+T0038,C025,recambio,198,2026-01-26,Recambio de rodamiento
+T0039,C026,inspeccion,30,2025-10-24,Inspección de sello mecánico
+T0040,C026,recambio,132,2025-12-07,Recambio de sello mecánico
+T0041,C027,inspeccion,30,2025-10-29,Inspección de correa transportadora
+T0042,C028,inspeccion,90,2025-10-29,Inspección de motor eléctrico
+T0043,C029,inspeccion,60,2025-11-02,Inspección de válvula de control
+T0044,C030,inspeccion,60,2025-11-25,Inspección de sensor de proceso
+T0045,C030,recambio,135,2025-10-29,Recambio de sensor de proceso
+T0046,C031,inspeccion,90,2025-12-27,Inspección de contactor
+T0047,C031,recambio,296,2026-05-05,Recambio de contactor
+T0048,C032,inspeccion,30,2025-10-13,Inspección de filtro de línea
+T0049,C033,inspeccion,45,2025-11-03,Inspección de rodamiento
+T0050,C034,inspeccion,30,2025-10-01,Inspección de sello mecánico
+T0051,C034,recambio,151,2025-10-30,Recambio de sello mecánico
+T0052,C035,inspeccion,30,2025-10-25,Inspección de correa transportadora
+T0053,C036,inspeccion,90,2025-11-07,Inspección de motor eléctrico
+T0054,C037,inspeccion,60,2025-11-16,Inspección de válvula de control
+T0055,C037,recambio,143,2025-12-07,Recambio de válvula de control
+T0056,C038,inspeccion,60,2025-11-02,Inspección de sensor de proceso
+T0057,C039,inspeccion,90,2025-11-08,Inspección de contactor
+T0058,C040,inspeccion,30,2025-10-20,Inspección de filtro de línea
+T0059,C041,inspeccion,45,2025-10-11,Inspección de rodamiento
+T0060,C041,recambio,190,2026-02-16,Recambio de rodamiento
+T0061,C042,inspeccion,30,2025-10-30,Inspección de sello mecánico
+T0062,C043,inspeccion,30,2025-10-01,Inspección de correa transportadora
+T0063,C043,recambio,117,2025-10-15,Recambio de correa transportadora
+T0064,C044,inspeccion,90,2025-10-31,Inspección de motor eléctrico
+T0065,C045,inspeccion,60,2025-10-06,Inspección de válvula de control
+T0066,C045,recambio,336,2025-11-13,Recambio de válvula de control
+T0067,C046,inspeccion,60,2025-11-18,Inspección de sensor de proceso
+T0068,C047,inspeccion,90,2025-10-17,Inspección de contactor
+T0069,C048,inspeccion,30,2025-10-06,Inspección de filtro de línea
+T0070,C049,inspeccion,45,2025-10-28,Inspección de rodamiento
+T0071,C049,recambio,220,2025-11-24,Recambio de rodamiento
+T0072,C050,inspeccion,30,2025-10-23,Inspección de sello mecánico
+T0073,C051,inspeccion,30,2025-10-21,Inspección de correa transportadora
+T0074,C051,recambio,142,2026-01-04,Recambio de correa transportadora
+T0075,C052,inspeccion,90,2025-10-16,Inspección de motor eléctrico
+T0076,C052,recambio,291,2026-02-04,Recambio de motor eléctrico
+T0077,C053,inspeccion,60,2025-11-07,Inspección de válvula de control
+T0078,C053,recambio,286,2026-07-11,Recambio de válvula de control
+T0079,C054,inspeccion,60,2025-10-05,Inspección de sensor de proceso
+T0080,C054,recambio,227,2026-03-31,Recambio de sensor de proceso
+T0081,C055,inspeccion,90,2025-10-09,Inspección de contactor
+T0082,C056,inspeccion,30,2025-10-03,Inspección de filtro de línea
+T0083,C057,inspeccion,45,2025-11-12,Inspección de rodamiento
+T0084,C058,inspeccion,30,2025-10-24,Inspección de sello mecánico
+T0085,C058,recambio,73,2025-11-30,Recambio de sello mecánico
+T0086,C059,inspeccion,30,2025-10-14,Inspección de correa transportadora
+T0087,C059,recambio,123,2025-10-25,Recambio de correa transportadora
+T0088,C060,inspeccion,90,2025-11-15,Inspección de motor eléctrico
+T0089,C060,recambio,623,2026-12-08,Recambio de motor eléctrico
+T0090,C061,inspeccion,60,2025-10-04,Inspección de válvula de control
+T0091,C061,recambio,173,2026-03-22,Recambio de válvula de control
+T0092,C062,inspeccion,60,2025-10-04,Inspección de sensor de proceso
+T0093,C063,inspeccion,90,2025-10-14,Inspección de contactor
+T0094,C063,recambio,147,2025-12-03,Recambio de contactor
+T0095,C064,inspeccion,30,2025-10-05,Inspección de filtro de línea
+T0096,C064,recambio,75,2025-11-24,Recambio de filtro de línea
+T0097,C065,inspeccion,45,2025-10-05,Inspección de rodamiento
+T0098,C065,recambio,196,2026-01-22,Recambio de rodamiento
+T0099,C066,inspeccion,30,2025-10-04,Inspección de sello mecánico
+T0100,C067,inspeccion,30,2025-10-27,Inspección de correa transportadora
+T0101,C067,recambio,142,2025-10-04,Recambio de correa transportadora
+T0102,C068,inspeccion,90,2025-10-22,Inspección de motor eléctrico
+T0103,C069,inspeccion,60,2025-11-25,Inspección de válvula de control
+T0104,C069,recambio,145,2026-01-11,Recambio de válvula de control
+T0105,C070,inspeccion,60,2025-10-25,Inspección de sensor de proceso
+T0106,C071,inspeccion,90,2025-11-28,Inspección de contactor
+T0107,C071,recambio,319,2026-02-24,Recambio de contactor
+T0108,C072,inspeccion,30,2025-10-26,Inspección de filtro de línea
+T0109,C072,recambio,44,2025-11-05,Recambio de filtro de línea
+T0110,C073,inspeccion,45,2025-10-10,Inspección de rodamiento
+T0111,C074,inspeccion,30,2025-10-02,Inspección de sello mecánico
+T0112,C074,recambio,136,2025-10-16,Recambio de sello mecánico
+T0113,C075,inspeccion,30,2025-10-02,Inspección de correa transportadora
+T0114,C076,inspeccion,90,2025-12-07,Inspección de motor eléctrico
+T0115,C077,inspeccion,60,2025-10-06,Inspección de válvula de control
+T0116,C077,recambio,343,2026-01-04,Recambio de válvula de control
+T0117,C078,inspeccion,60,2025-11-25,Inspección de sensor de proceso
+T0118,C078,recambio,215,2025-11-30,Recambio de sensor de proceso
+T0119,C079,inspeccion,90,2025-12-12,Inspección de contactor
+T0120,C079,recambio,195,2025-12-03,Recambio de contactor
+T0121,C080,inspeccion,30,2025-10-20,Inspección de filtro de línea
+T0122,C081,inspeccion,45,2025-11-06,Inspección de rodamiento
+T0123,C081,recambio,207,2026-02-11,Recambio de rodamiento
+T0124,C082,inspeccion,30,2025-10-22,Inspección de sello mecánico
+T0125,C082,recambio,138,2025-12-20,Recambio de sello mecánico
+T0126,C083,inspeccion,30,2025-10-22,Inspección de correa transportadora
+T0127,C083,recambio,120,2025-12-22,Recambio de correa transportadora
+T0128,C084,inspeccion,90,2025-10-10,Inspección de motor eléctrico
+T0129,C084,recambio,561,2025-10-10,Recambio de motor eléctrico
+T0130,C085,inspeccion,60,2025-10-07,Inspección de válvula de control
+T0131,C085,recambio,182,2025-10-19,Recambio de válvula de control
+T0132,C086,inspeccion,60,2025-10-17,Inspección de sensor de proceso
+T0133,C087,inspeccion,90,2025-10-09,Inspección de contactor
+T0134,C087,recambio,315,2026-02-03,Recambio de contactor
+T0135,C088,inspeccion,30,2025-10-27,Inspección de filtro de línea
+T0136,C088,recambio,30,2025-10-18,Recambio de filtro de línea
+T0137,C089,inspeccion,45,2025-11-11,Inspección de rodamiento
+T0138,C090,inspeccion,30,2025-10-10,Inspección de sello mecánico
+T0139,C091,inspeccion,30,2025-10-29,Inspección de correa transportadora
+T0140,C092,inspeccion,90,2025-10-14,Inspección de motor eléctrico
+T0141,C092,recambio,525,2026-03-09,Recambio de motor eléctrico
+T0142,C093,inspeccion,60,2025-11-15,Inspección de válvula de control
+T0143,C093,recambio,311,2026-03-25,Recambio de válvula de control
+T0144,C094,inspeccion,60,2025-10-17,Inspección de sensor de proceso
+T0145,C094,recambio,258,2026-06-08,Recambio de sensor de proceso
+T0146,C095,inspeccion,90,2025-10-07,Inspección de contactor
+T0147,C095,recambio,371,2025-11-17,Recambio de contactor
+T0148,C096,inspeccion,30,2025-10-02,Inspección de filtro de línea
+T0149,C097,inspeccion,45,2025-11-10,Inspección de rodamiento
+T0150,C097,recambio,214,2025-12-07,Recambio de rodamiento
+T0151,C098,inspeccion,30,2025-10-23,Inspección de sello mecánico
+T0152,C098,recambio,146,2026-01-18,Recambio de sello mecánico
+T0153,C099,inspeccion,30,2025-10-03,Inspección de correa transportadora
+T0154,C100,inspeccion,90,2025-12-09,Inspección de motor eléctrico
+T0155,C101,inspeccion,60,2025-11-05,Inspección de válvula de control
+T0156,C101,recambio,289,2025-12-15,Recambio de válvula de control
+T0157,C102,inspeccion,60,2025-10-24,Inspección de sensor de proceso
+T0158,C102,recambio,93,2025-10-06,Recambio de sensor de proceso
+T0159,C103,inspeccion,90,2025-12-27,Inspección de contactor
+T0160,C104,inspeccion,30,2025-10-25,Inspección de filtro de línea
+T0161,C104,recambio,65,2025-11-22,Recambio de filtro de línea
+T0162,C105,inspeccion,45,2025-10-10,Inspección de rodamiento
+T0163,C106,inspeccion,30,2025-10-28,Inspección de sello mecánico
+T0164,C107,inspeccion,30,2025-10-06,Inspección de correa transportadora
+T0165,C107,recambio,135,2026-01-14,Recambio de correa transportadora
+T0166,C108,inspeccion,90,2025-11-12,Inspección de motor eléctrico
+T0167,C108,recambio,637,2026-11-26,Recambio de motor eléctrico
+T0168,C109,inspeccion,60,2025-10-18,Inspección de válvula de control
+T0169,C110,inspeccion,60,2025-10-25,Inspección de sensor de proceso
+T0170,C110,recambio,263,2025-10-20,Recambio de sensor de proceso
+T0171,C111,inspeccion,90,2025-10-26,Inspección de contactor
+T0172,C112,inspeccion,30,2025-10-12,Inspección de filtro de línea
+T0173,C113,inspeccion,45,2025-10-15,Inspección de rodamiento
+T0174,C113,recambio,216,2025-11-27,Recambio de rodamiento
+T0175,C114,inspeccion,30,2025-10-11,Inspección de sello mecánico
+T0176,C114,recambio,135,2025-12-11,Recambio de sello mecánico
+T0177,C115,inspeccion,30,2025-10-12,Inspección de correa transportadora
+T0178,C116,inspeccion,90,2025-12-26,Inspección de motor eléctrico
+T0179,C117,inspeccion,60,2025-10-22,Inspección de válvula de control
+T0180,C118,inspeccion,60,2025-11-26,Inspección de sensor de proceso
+T0181,C119,inspeccion,90,2025-12-14,Inspección de contactor
+T0182,C120,inspeccion,30,2025-10-02,Inspección de filtro de línea
+T0183,C121,inspeccion,45,2025-10-21,Inspección de rodamiento
+T0184,C121,recambio,194,2026-01-20,Recambio de rodamiento
+T0185,C122,inspeccion,30,2025-10-04,Inspección de sello mecánico
+T0186,C123,inspeccion,30,2025-10-09,Inspección de correa transportadora
+T0187,C123,recambio,62,2025-10-03,Recambio de correa transportadora
+T0188,C124,inspeccion,90,2025-12-06,Inspección de motor eléctrico
+T0189,C125,inspeccion,60,2025-11-13,Inspección de válvula de control
+T0190,C126,inspeccion,60,2025-10-24,Inspección de sensor de proceso
+T0191,C127,inspeccion,90,2025-11-12,Inspección de contactor
+T0192,C127,recambio,196,2026-03-09,Recambio de contactor
+T0193,C128,inspeccion,30,2025-10-24,Inspección de filtro de línea
+T0194,C128,recambio,82,2025-11-08,Recambio de filtro de línea
+T0195,C129,inspeccion,45,2025-10-27,Inspección de rodamiento
+T0196,C130,inspeccion,30,2025-10-18,Inspección de sello mecánico
+T0197,C130,recambio,157,2025-11-02,Recambio de sello mecánico
+T0198,C131,inspeccion,30,2025-10-13,Inspección de correa transportadora
+T0199,C131,recambio,130,2025-11-14,Recambio de correa transportadora
+T0200,C132,inspeccion,90,2025-11-21,Inspección de motor eléctrico
+T0201,C133,inspeccion,60,2025-10-20,Inspección de válvula de control
+T0202,C134,inspeccion,60,2025-11-07,Inspección de sensor de proceso
+T0203,C134,recambio,242,2026-03-05,Recambio de sensor de proceso
+T0204,C135,inspeccion,90,2025-11-26,Inspección de contactor
+T0205,C136,inspeccion,30,2025-10-16,Inspección de filtro de línea
+T0206,C136,recambio,31,2025-10-26,Recambio de filtro de línea
+T0207,C137,inspeccion,45,2025-10-11,Inspección de rodamiento
+T0208,C138,inspeccion,30,2025-10-17,Inspección de sello mecánico
+T0209,C139,inspeccion,30,2025-10-03,Inspección de correa transportadora
+T0210,C140,inspeccion,90,2025-12-26,Inspección de motor eléctrico
+T0211,C141,inspeccion,60,2025-10-10,Inspección de válvula de control
+T0212,C141,recambio,329,2025-10-13,Recambio de válvula de control
+T0213,C142,inspeccion,60,2025-11-09,Inspección de sensor de proceso
+T0214,C142,recambio,284,2025-11-07,Recambio de sensor de proceso
+T0215,C143,inspeccion,90,2025-12-13,Inspección de contactor
+T0216,C143,recambio,191,2025-11-19,Recambio de contactor
+T0217,C144,inspeccion,30,2025-10-16,Inspección de filtro de línea
+T0218,C145,inspeccion,45,2025-11-14,Inspección de rodamiento
+T0219,C145,recambio,79,2025-10-01,Recambio de rodamiento
+T0220,C146,inspeccion,30,2025-10-25,Inspección de sello mecánico
+T0221,C147,inspeccion,30,2025-10-23,Inspección de correa transportadora
+T0222,C147,recambio,50,2025-11-03,Recambio de correa transportadora
+T0223,C148,inspeccion,90,2025-10-16,Inspección de motor eléctrico
+T0224,C148,recambio,296,2026-05-22,Recambio de motor eléctrico
+T0225,C149,inspeccion,60,2025-11-03,Inspección de válvula de control
+T0226,C149,recambio,298,2026-07-14,Recambio de válvula de control
+T0227,C150,inspeccion,60,2025-11-09,Inspección de sensor de proceso
+T0228,C151,inspeccion,90,2025-11-24,Inspección de contactor
+T0229,C152,inspeccion,30,2025-10-15,Inspección de filtro de línea
+T0230,C153,inspeccion,45,2025-10-31,Inspección de rodamiento
+T0231,C154,inspeccion,30,2025-10-27,Inspección de sello mecánico
+T0232,C154,recambio,81,2025-11-05,Recambio de sello mecánico
+T0233,C155,inspeccion,30,2025-10-16,Inspección de correa transportadora
+T0234,C156,inspeccion,90,2025-11-26,Inspección de motor eléctrico
+T0235,C157,inspeccion,60,2025-10-18,Inspección de válvula de control
+T0236,C157,recambio,282,2026-03-21,Recambio de válvula de control
+T0237,C158,inspeccion,60,2025-10-09,Inspección de sensor de proceso
+T0238,C158,recambio,251,2025-11-08,Recambio de sensor de proceso
+T0239,C159,inspeccion,90,2025-10-28,Inspección de contactor
+T0240,C159,recambio,349,2025-11-02,Recambio de contactor
+T0241,C160,inspeccion,30,2025-10-15,Inspección de filtro de línea
+T0242,C160,recambio,33,2025-10-27,Recambio de filtro de línea
+T0243,C161,inspeccion,45,2025-10-25,Inspección de rodamiento
+T0244,C161,recambio,218,2026-04-16,Recambio de rodamiento
+T0245,C162,inspeccion,30,2025-10-28,Inspección de sello mecánico
+T0246,C163,inspeccion,30,2025-10-16,Inspección de correa transportadora
+T0247,C164,inspeccion,90,2025-11-19,Inspección de motor eléctrico
+T0248,C164,recambio,567,2026-12-04,Recambio de motor eléctrico
+T0249,C165,inspeccion,60,2025-11-21,Inspección de válvula de control
+T0250,C166,inspeccion,60,2025-11-01,Inspección de sensor de proceso
+T0251,C167,inspeccion,90,2025-10-04,Inspección de contactor
+T0252,C167,recambio,324,2026-04-18,Recambio de contactor
+T0253,C168,inspeccion,30,2025-10-13,Inspección de filtro de línea
+T0254,C168,recambio,78,2025-10-22,Recambio de filtro de línea
+T0255,C169,inspeccion,45,2025-11-09,Inspección de rodamiento
+T0256,C170,inspeccion,30,2025-10-19,Inspección de sello mecánico
+T0257,C171,inspeccion,30,2025-10-03,Inspección de correa transportadora
+T0258,C172,inspeccion,90,2025-11-29,Inspección de motor eléctrico
+T0259,C173,inspeccion,60,2025-10-21,Inspección de válvula de control
+T0260,C173,recambio,279,2026-01-17,Recambio de válvula de control
+T0261,C174,inspeccion,60,2025-11-26,Inspección de sensor de proceso
+T0262,C174,recambio,110,2025-11-18,Recambio de sensor de proceso
+T0263,C175,inspeccion,90,2025-11-23,Inspección de contactor
+T0264,C175,recambio,375,2026-02-07,Recambio de contactor
+T0265,C176,inspeccion,30,2025-10-01,Inspección de filtro de línea
+T0266,C177,inspeccion,45,2025-10-23,Inspección de rodamiento
+T0267,C178,inspeccion,30,2025-10-21,Inspección de sello mecánico
+T0268,C178,recambio,129,2025-10-11,Recambio de sello mecánico
+T0269,C179,inspeccion,30,2025-10-07,Inspección de correa transportadora
+T0270,C180,inspeccion,90,2025-10-20,Inspección de motor eléctrico
+T0271,C181,inspeccion,60,2025-10-08,Inspección de válvula de control
+T0272,C181,recambio,299,2026-07-16,Recambio de válvula de control
+T0273,C182,inspeccion,60,2025-11-14,Inspección de sensor de proceso
+T0274,C183,inspeccion,90,2025-12-17,Inspección de contactor
+T0275,C183,recambio,317,2026-08-07,Recambio de contactor
+T0276,C184,inspeccion,30,2025-10-25,Inspección de filtro de línea
+T0277,C185,inspeccion,45,2025-10-07,Inspección de rodamiento
+T0278,C186,inspeccion,30,2025-10-19,Inspección de sello mecánico
+T0279,C187,inspeccion,30,2025-10-13,Inspección de correa transportadora
+T0280,C188,inspeccion,90,2025-10-10,Inspección de motor eléctrico
+T0281,C189,inspeccion,60,2025-10-16,Inspección de válvula de control
+T0282,C190,inspeccion,60,2025-11-24,Inspección de sensor de proceso
+T0283,C190,recambio,268,2025-12-01,Recambio de sensor de proceso
+T0284,C191,inspeccion,90,2025-10-06,Inspección de contactor
+T0285,C192,inspeccion,30,2025-10-12,Inspección de filtro de línea
+T0286,C192,recambio,73,2025-10-09,Recambio de filtro de línea
+T0287,C193,inspeccion,45,2025-10-01,Inspección de rodamiento
+T0288,C194,inspeccion,30,2025-10-04,Inspección de sello mecánico
+T0289,C195,inspeccion,30,2025-10-29,Inspección de correa transportadora
+T0290,C195,recambio,56,2025-11-23,Recambio de correa transportadora
+T0291,C196,inspeccion,90,2025-10-23,Inspección de motor eléctrico
+T0292,C196,recambio,238,2026-04-06,Recambio de motor eléctrico
+T0293,C197,inspeccion,60,2025-11-09,Inspección de válvula de control
+T0294,C198,inspeccion,60,2025-10-30,Inspección de sensor de proceso
+T0295,C199,inspeccion,90,2025-11-04,Inspección de contactor
+T0296,C199,recambio,178,2025-12-22,Recambio de contactor
+T0297,C200,inspeccion,30,2025-10-09,Inspección de filtro de línea

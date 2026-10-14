@@ -1,0 +1,38 @@
+{
+  "descripcion": "Catálogo de reglas. Cada regla está registrada en src/brechas.py con el mismo id; aquí se activa o desactiva y se fijan sus parámetros. Para agregar una regla: una función con @regla(\"id\") y una entrada en esta lista.",
+  "relevancia": {
+    "duracion_minima_min": 15
+  },
+  "clasificacion": {
+    "confianza_minima": 0.6
+  },
+  "reglas": [
+    {
+      "id": "mantencion_no_ejecutada_o_atrasada",
+      "activa": true,
+      "parametros": {"tolerancia_dias": 7}
+    },
+    {
+      "id": "falla_post_mantencion",
+      "activa": true,
+      "parametros": {"ventana_dias": 15}
+    },
+    {
+      "id": "recambio_redundante",
+      "activa": true,
+      "parametros": {"umbral_vida_consumida": 0.6}
+    },
+    {
+      "id": "falla_antes_vida_util",
+      "activa": true,
+      "parametros": {"fraccion_vida_nominal": 1.0}
+    }
+  ],
+  "plan": {
+    "k_credibilidad": 5,
+    "fraccion_recambio": 0.85,
+    "fallas_tempranas_minimas": 2,
+    "factor_inspeccion": 0.5,
+    "frecuencia_minima_dias": 15
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "descripcion": "Taxonomía cerrada de eventos de denegación de servicio. Solo las categorías con atribuible_mantenimiento = true entran al cruce con la gestión de mantenimiento. Las palabras clave se comparan sin tildes ni mayúsculas.",
+  "categorias": [
+    {
+      "id": "falla_mecanica",
+      "nombre": "Falla mecánica",
+      "atribuible_mantenimiento": true,
+      "palabras_clave": ["rodamiento", "vibracion", "desgaste", "correa cortada", "desalineamiento", "atascamiento", "rotura"]
+    },
+    {
+      "id": "falla_electrica",
+      "nombre": "Falla eléctrica",
+      "atribuible_mantenimiento": true,
+      "palabras_clave": ["motor quemado", "cortocircuito", "variador", "contactor", "falla electrica", "sobrecorriente"]
+    },
+    {
+      "id": "falla_instrumentacion",
+      "nombre": "Falla de instrumentación",
+      "atribuible_mantenimiento": true,
+      "palabras_clave": ["sensor", "transmisor", "lectura erronea", "senal perdida", "descalibrado"]
+    },
+    {
+      "id": "fuga",
+      "nombre": "Fuga",
+      "atribuible_mantenimiento": true,
+      "palabras_clave": ["fuga", "sello", "filtracion", "goteo"]
+    },
+    {
+      "id": "sobrecalentamiento",
+      "nombre": "Sobrecalentamiento",
+      "atribuible_mantenimiento": true,
+      "palabras_clave": ["sobrecalentamiento", "temperatura alta", "recalentamiento"]
+    },
+    {
+      "id": "operacional",
+      "nombre": "Causa operacional",
+      "atribuible_mantenimiento": false,
+      "palabras_clave": ["cambio de formato", "falta de material", "espera de operador", "ajuste de proceso", "limpieza programada"]
+    },
+    {
+      "id": "externo",
+      "nombre": "Causa externa",
+      "atribuible_mantenimiento": false,
+      "palabras_clave": ["corte de suministro", "caida de red", "proveedor externo", "condicion climatica"]
+    }
+  ]
+}

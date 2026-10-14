@@ -1,0 +1,38 @@
+/* fiabilidad — lo propio del sitio. Tokens, fuentes y componentes compartidos (encabezado, tablas,
+   estados, botones, bloque Portafolio) vienen de tema.css, que se carga antes; aquí no se redefinen tokens.
+   Guía: consulta/docs/guia-de-estilo.md. Carga, indicadores y chips: mismos patrones que conciliador. */
+
+.carga { background: var(--surface); border: 1px dashed var(--border-strong); border-radius: var(--r); padding: var(--sp-4); margin: var(--sp-4) 0; }
+.carga label { display: block; font-weight: 600; margin-bottom: var(--sp-2); }
+.carga input[type="file"] { font-family: var(--sans); font-size: var(--fs-sm); max-width: 100%; }
+.carga .hint { margin: var(--sp-2) 0 0; }
+.detectados { list-style: none; padding: 0; margin: var(--sp-2) 0 0; font-size: var(--fs-sm); font-family: var(--mono); }
+.detectados:empty { display: none; }
+.detectados .ok { color: var(--ok); }
+.detectados .falta { color: var(--alerta); }
+.acciones-carga { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; }
+.descargas { margin-top: var(--sp-6); }
+.estado-run { font-size: var(--fs-sm); color: var(--muted); }
+.privacidad { font-size: var(--fs-sm); color: var(--muted); margin-top: var(--sp-3); }
+.errores, .advertencias { font-size: var(--fs-sm); padding-left: 1.2em; }
+.errores { color: var(--critica); }
+.advertencias { color: var(--alerta); }
+.errores[hidden], .advertencias[hidden], #resultados[hidden] { display: none; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--sp-3); margin: var(--sp-4) 0; }
+.kpi { background: var(--surface-2); border: 1px solid transparent; border-radius: var(--r); padding: var(--sp-3) var(--sp-4); }
+.kpi .valor { font-size: var(--fs-xl); font-weight: 500; display: block; }
+.kpi .rotulo { font-size: var(--fs-sm); color: var(--muted); }
+.kpi.ok .valor { color: var(--ok); }
+.kpi.alerta .valor { color: var(--alerta); }
+
+.chips { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: var(--sp-3) 0; }
+.chip { font-family: var(--sans); font-size: var(--fs-sm); border: 1px solid var(--border-strong); background: var(--surface);
+  color: var(--text); border-radius: var(--r-chip); padding: 3px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+
+.table-scroll { max-height: 28rem; overflow: auto; }
+#tabla-cambios td:last-child, #tabla-brechas td:last-child, #tabla-observaciones td:last-child { min-width: 22rem; }
+#tabla-brechas td:nth-child(2), #tabla-brechas td:nth-child(3), #tabla-brechas td:nth-child(4),
+#tabla-cambios td:nth-child(-n+5), #tabla-observaciones td:nth-child(-n+4) { white-space: nowrap; }
+.reglas li { margin-bottom: var(--sp-2); }

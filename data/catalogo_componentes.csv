@@ -1,0 +1,201 @@
+componente_id,equipo_id,tipo_componente,descripcion,vida_util_nominal_dias,fecha_instalacion
+C001,EQ01,rodamiento,Rodamiento EQ01,240,2025-09-25
+C002,EQ01,sello_mecanico,Sello mecánico EQ01,180,2025-06-13
+C003,EQ01,correa,Correa transportadora EQ01,150,2025-09-23
+C004,EQ01,motor_electrico,Motor eléctrico EQ01,720,2024-04-30
+C005,EQ01,valvula,Válvula de control EQ01,365,2024-12-26
+C006,EQ02,sensor,Sensor de proceso EQ02,300,2025-08-30
+C007,EQ02,contactor,Contactor EQ02,400,2025-05-09
+C008,EQ02,filtro,Filtro de línea EQ02,90,2025-09-08
+C009,EQ02,rodamiento,Rodamiento EQ02,240,2025-06-20
+C010,EQ02,sello_mecanico,Sello mecánico EQ02,180,2025-09-20
+C011,EQ03,correa,Correa transportadora EQ03,150,2025-09-06
+C012,EQ03,motor_electrico,Motor eléctrico EQ03,720,2025-03-28
+C013,EQ03,valvula,Válvula de control EQ03,365,2025-08-27
+C014,EQ03,sensor,Sensor de proceso EQ03,300,2025-05-06
+C015,EQ03,contactor,Contactor EQ03,400,2025-08-11
+C016,EQ04,filtro,Filtro de línea EQ04,90,2025-08-05
+C017,EQ04,rodamiento,Rodamiento EQ04,240,2025-07-20
+C018,EQ04,sello_mecanico,Sello mecánico EQ04,180,2025-08-19
+C019,EQ04,correa,Correa transportadora EQ04,150,2025-08-21
+C020,EQ04,motor_electrico,Motor eléctrico EQ04,720,2025-09-25
+C021,EQ05,valvula,Válvula de control EQ05,365,2025-04-18
+C022,EQ05,sensor,Sensor de proceso EQ05,300,2025-09-03
+C023,EQ05,contactor,Contactor EQ05,400,2025-04-23
+C024,EQ05,filtro,Filtro de línea EQ05,90,2025-09-03
+C025,EQ05,rodamiento,Rodamiento EQ05,240,2025-07-12
+C026,EQ06,sello_mecanico,Sello mecánico EQ06,180,2025-07-28
+C027,EQ06,correa,Correa transportadora EQ06,150,2025-06-14
+C028,EQ06,motor_electrico,Motor eléctrico EQ06,720,2024-09-26
+C029,EQ06,valvula,Válvula de control EQ06,365,2025-07-23
+C030,EQ06,sensor,Sensor de proceso EQ06,300,2025-06-16
+C031,EQ07,contactor,Contactor EQ07,400,2025-07-13
+C032,EQ07,filtro,Filtro de línea EQ07,90,2025-08-13
+C033,EQ07,rodamiento,Rodamiento EQ07,240,2025-06-04
+C034,EQ07,sello_mecanico,Sello mecánico EQ07,180,2025-06-01
+C035,EQ07,correa,Correa transportadora EQ07,150,2025-07-25
+C036,EQ08,motor_electrico,Motor eléctrico EQ08,720,2025-06-09
+C037,EQ08,valvula,Válvula de control EQ08,365,2025-07-17
+C038,EQ08,sensor,Sensor de proceso EQ08,300,2025-07-02
+C039,EQ08,contactor,Contactor EQ08,400,2024-11-15
+C040,EQ08,filtro,Filtro de línea EQ08,90,2025-07-29
+C041,EQ09,rodamiento,Rodamiento EQ09,240,2025-08-10
+C042,EQ09,sello_mecanico,Sello mecánico EQ09,180,2025-05-19
+C043,EQ09,correa,Correa transportadora EQ09,150,2025-06-20
+C044,EQ09,motor_electrico,Motor eléctrico EQ09,720,2024-11-21
+C045,EQ09,valvula,Válvula de control EQ09,365,2024-12-12
+C046,EQ10,sensor,Sensor de proceso EQ10,300,2025-08-27
+C047,EQ10,contactor,Contactor EQ10,400,2025-07-29
+C048,EQ10,filtro,Filtro de línea EQ10,90,2025-07-23
+C049,EQ10,rodamiento,Rodamiento EQ10,240,2025-04-18
+C050,EQ10,sello_mecanico,Sello mecánico EQ10,180,2025-08-11
+C051,EQ11,correa,Correa transportadora EQ11,150,2025-08-15
+C052,EQ11,motor_electrico,Motor eléctrico EQ11,720,2025-04-19
+C053,EQ11,valvula,Válvula de control EQ11,365,2025-09-28
+C054,EQ11,sensor,Sensor de proceso EQ11,300,2025-08-16
+C055,EQ11,contactor,Contactor EQ11,400,2025-06-06
+C056,EQ12,filtro,Filtro de línea EQ12,90,2025-08-20
+C057,EQ12,rodamiento,Rodamiento EQ12,240,2025-07-22
+C058,EQ12,sello_mecanico,Sello mecánico EQ12,180,2025-09-18
+C059,EQ12,correa,Correa transportadora EQ12,150,2025-06-24
+C060,EQ12,motor_electrico,Motor eléctrico EQ12,720,2025-03-25
+C061,EQ13,valvula,Válvula de control EQ13,365,2025-09-30
+C062,EQ13,sensor,Sensor de proceso EQ13,300,2025-08-12
+C063,EQ13,contactor,Contactor EQ13,400,2025-07-09
+C064,EQ13,filtro,Filtro de línea EQ13,90,2025-09-10
+C065,EQ13,rodamiento,Rodamiento EQ13,240,2025-07-10
+C066,EQ14,sello_mecanico,Sello mecánico EQ14,180,2025-05-14
+C067,EQ14,correa,Correa transportadora EQ14,150,2025-05-15
+C068,EQ14,motor_electrico,Motor eléctrico EQ14,720,2025-02-01
+C069,EQ14,valvula,Válvula de control EQ14,365,2025-08-19
+C070,EQ14,sensor,Sensor de proceso EQ14,300,2025-07-09
+C071,EQ15,contactor,Contactor EQ15,400,2025-04-11
+C072,EQ15,filtro,Filtro de línea EQ15,90,2025-09-22
+C073,EQ15,rodamiento,Rodamiento EQ15,240,2025-05-30
+C074,EQ15,sello_mecanico,Sello mecánico EQ15,180,2025-06-02
+C075,EQ15,correa,Correa transportadora EQ15,150,2025-09-17
+C076,EQ16,motor_electrico,Motor eléctrico EQ16,720,2024-05-05
+C077,EQ16,valvula,Válvula de control EQ16,365,2025-01-26
+C078,EQ16,sensor,Sensor de proceso EQ16,300,2025-04-29
+C079,EQ16,contactor,Contactor EQ16,400,2025-05-22
+C080,EQ16,filtro,Filtro de línea EQ16,90,2025-09-26
+C081,EQ17,rodamiento,Rodamiento EQ17,240,2025-07-19
+C082,EQ17,sello_mecanico,Sello mecánico EQ17,180,2025-08-04
+C083,EQ17,correa,Correa transportadora EQ17,150,2025-08-24
+C084,EQ17,motor_electrico,Motor eléctrico EQ17,720,2024-03-28
+C085,EQ17,valvula,Válvula de control EQ17,365,2025-04-20
+C086,EQ18,sensor,Sensor de proceso EQ18,300,2025-01-15
+C087,EQ18,contactor,Contactor EQ18,400,2025-03-25
+C088,EQ18,filtro,Filtro de línea EQ18,90,2025-09-18
+C089,EQ18,rodamiento,Rodamiento EQ18,240,2025-04-28
+C090,EQ18,sello_mecanico,Sello mecánico EQ18,180,2025-05-13
+C091,EQ19,correa,Correa transportadora EQ19,150,2025-09-05
+C092,EQ19,motor_electrico,Motor eléctrico EQ19,720,2024-09-30
+C093,EQ19,valvula,Válvula de control EQ19,365,2025-05-18
+C094,EQ19,sensor,Sensor de proceso EQ19,300,2025-09-23
+C095,EQ19,contactor,Contactor EQ19,400,2024-11-11
+C096,EQ20,filtro,Filtro de línea EQ20,90,2025-08-27
+C097,EQ20,rodamiento,Rodamiento EQ20,240,2025-05-07
+C098,EQ20,sello_mecanico,Sello mecánico EQ20,180,2025-08-25
+C099,EQ20,correa,Correa transportadora EQ20,150,2025-09-03
+C100,EQ20,motor_electrico,Motor eléctrico EQ20,720,2025-05-02
+C101,EQ21,valvula,Válvula de control EQ21,365,2025-03-01
+C102,EQ21,sensor,Sensor de proceso EQ21,300,2025-07-05
+C103,EQ21,contactor,Contactor EQ21,400,2025-06-16
+C104,EQ21,filtro,Filtro de línea EQ21,90,2025-09-18
+C105,EQ21,rodamiento,Rodamiento EQ21,240,2025-03-24
+C106,EQ22,sello_mecanico,Sello mecánico EQ22,180,2025-08-02
+C107,EQ22,correa,Correa transportadora EQ22,150,2025-09-01
+C108,EQ22,motor_electrico,Motor eléctrico EQ22,720,2025-02-27
+C109,EQ22,valvula,Válvula de control EQ22,365,2025-05-27
+C110,EQ22,sensor,Sensor de proceso EQ22,300,2025-01-30
+C111,EQ23,contactor,Contactor EQ23,400,2025-06-10
+C112,EQ23,filtro,Filtro de línea EQ23,90,2025-08-04
+C113,EQ23,rodamiento,Rodamiento EQ23,240,2025-04-25
+C114,EQ23,sello_mecanico,Sello mecánico EQ23,180,2025-07-29
+C115,EQ23,correa,Correa transportadora EQ23,150,2025-07-22
+C116,EQ24,motor_electrico,Motor eléctrico EQ24,720,2024-08-18
+C117,EQ24,valvula,Válvula de control EQ24,365,2024-12-31
+C118,EQ24,sensor,Sensor de proceso EQ24,300,2025-08-03
+C119,EQ24,contactor,Contactor EQ24,400,2025-07-02
+C120,EQ24,filtro,Filtro de línea EQ24,90,2025-08-29
+C121,EQ25,rodamiento,Rodamiento EQ25,240,2025-07-10
+C122,EQ25,sello_mecanico,Sello mecánico EQ25,180,2025-05-24
+C123,EQ25,correa,Correa transportadora EQ25,150,2025-08-02
+C124,EQ25,motor_electrico,Motor eléctrico EQ25,720,2025-09-30
+C125,EQ25,valvula,Válvula de control EQ25,365,2024-12-30
+C126,EQ26,sensor,Sensor de proceso EQ26,300,2025-06-23
+C127,EQ26,contactor,Contactor EQ26,400,2025-08-25
+C128,EQ26,filtro,Filtro de línea EQ26,90,2025-08-18
+C129,EQ26,rodamiento,Rodamiento EQ26,240,2025-04-14
+C130,EQ26,sello_mecanico,Sello mecánico EQ26,180,2025-05-29
+C131,EQ27,correa,Correa transportadora EQ27,150,2025-07-07
+C132,EQ27,motor_electrico,Motor eléctrico EQ27,720,2024-11-27
+C133,EQ27,valvula,Válvula de control EQ27,365,2025-10-01
+C134,EQ27,sensor,Sensor de proceso EQ27,300,2025-07-06
+C135,EQ27,contactor,Contactor EQ27,400,2025-02-05
+C136,EQ28,filtro,Filtro de línea EQ28,90,2025-09-25
+C137,EQ28,rodamiento,Rodamiento EQ28,240,2025-03-12
+C138,EQ28,sello_mecanico,Sello mecánico EQ28,180,2025-07-21
+C139,EQ28,correa,Correa transportadora EQ28,150,2025-07-08
+C140,EQ28,motor_electrico,Motor eléctrico EQ28,720,2025-02-03
+C141,EQ29,valvula,Válvula de control EQ29,365,2024-11-18
+C142,EQ29,sensor,Sensor de proceso EQ29,300,2025-01-27
+C143,EQ29,contactor,Contactor EQ29,400,2025-05-12
+C144,EQ29,filtro,Filtro de línea EQ29,90,2025-08-13
+C145,EQ29,rodamiento,Rodamiento EQ29,240,2025-07-14
+C146,EQ30,sello_mecanico,Sello mecánico EQ30,180,2025-09-04
+C147,EQ30,correa,Correa transportadora EQ30,150,2025-09-14
+C148,EQ30,motor_electrico,Motor eléctrico EQ30,720,2025-07-30
+C149,EQ30,valvula,Válvula de control EQ30,365,2025-09-19
+C150,EQ30,sensor,Sensor de proceso EQ30,300,2025-02-17
+C151,EQ31,contactor,Contactor EQ31,400,2025-01-16
+C152,EQ31,filtro,Filtro de línea EQ31,90,2025-07-23
+C153,EQ31,rodamiento,Rodamiento EQ31,240,2025-03-25
+C154,EQ31,sello_mecanico,Sello mecánico EQ31,180,2025-08-16
+C155,EQ31,correa,Correa transportadora EQ31,150,2025-05-21
+C156,EQ32,motor_electrico,Motor eléctrico EQ32,720,2024-12-24
+C157,EQ32,valvula,Válvula de control EQ32,365,2025-06-12
+C158,EQ32,sensor,Sensor de proceso EQ32,300,2025-03-02
+C159,EQ32,contactor,Contactor EQ32,400,2024-11-18
+C160,EQ32,filtro,Filtro de línea EQ32,90,2025-09-24
+C161,EQ33,rodamiento,Rodamiento EQ33,240,2025-09-10
+C162,EQ33,sello_mecanico,Sello mecánico EQ33,180,2025-09-26
+C163,EQ33,correa,Correa transportadora EQ33,150,2025-06-26
+C164,EQ33,motor_electrico,Motor eléctrico EQ33,720,2025-05-16
+C165,EQ33,valvula,Válvula de control EQ33,365,2024-12-26
+C166,EQ34,sensor,Sensor de proceso EQ34,300,2025-06-11
+C167,EQ34,contactor,Contactor EQ34,400,2025-05-29
+C168,EQ34,filtro,Filtro de línea EQ34,90,2025-08-05
+C169,EQ34,rodamiento,Rodamiento EQ34,240,2025-08-30
+C170,EQ34,sello_mecanico,Sello mecánico EQ34,180,2025-06-23
+C171,EQ35,correa,Correa transportadora EQ35,150,2025-09-25
+C172,EQ35,motor_electrico,Motor eléctrico EQ35,720,2025-05-16
+C173,EQ35,valvula,Válvula de control EQ35,365,2025-04-13
+C174,EQ35,sensor,Sensor de proceso EQ35,300,2025-07-31
+C175,EQ35,contactor,Contactor EQ35,400,2025-01-28
+C176,EQ36,filtro,Filtro de línea EQ36,90,2025-08-02
+C177,EQ36,rodamiento,Rodamiento EQ36,240,2025-09-18
+C178,EQ36,sello_mecanico,Sello mecánico EQ36,180,2025-06-04
+C179,EQ36,correa,Correa transportadora EQ36,150,2025-07-30
+C180,EQ36,motor_electrico,Motor eléctrico EQ36,720,2024-01-04
+C181,EQ37,valvula,Válvula de control EQ37,365,2025-09-20
+C182,EQ37,sensor,Sensor de proceso EQ37,300,2025-02-05
+C183,EQ37,contactor,Contactor EQ37,400,2025-09-24
+C184,EQ37,filtro,Filtro de línea EQ37,90,2025-09-17
+C185,EQ37,rodamiento,Rodamiento EQ37,240,2025-07-14
+C186,EQ38,sello_mecanico,Sello mecánico EQ38,180,2025-07-14
+C187,EQ38,correa,Correa transportadora EQ38,150,2025-06-27
+C188,EQ38,motor_electrico,Motor eléctrico EQ38,720,2025-03-12
+C189,EQ38,valvula,Válvula de control EQ38,365,2024-11-14
+C190,EQ38,sensor,Sensor de proceso EQ38,300,2025-03-08
+C191,EQ39,contactor,Contactor EQ39,400,2024-12-16
+C192,EQ39,filtro,Filtro de línea EQ39,90,2025-07-28
+C193,EQ39,rodamiento,Rodamiento EQ39,240,2025-07-06
+C194,EQ39,sello_mecanico,Sello mecánico EQ39,180,2025-05-29
+C195,EQ39,correa,Correa transportadora EQ39,150,2025-09-28
+C196,EQ40,motor_electrico,Motor eléctrico EQ40,720,2025-08-11
+C197,EQ40,valvula,Válvula de control EQ40,365,2025-05-16
+C198,EQ40,sensor,Sensor de proceso EQ40,300,2025-01-27
+C199,EQ40,contactor,Contactor EQ40,400,2025-06-27
+C200,EQ40,filtro,Filtro de línea EQ40,90,2025-09-20
