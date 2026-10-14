@@ -28,11 +28,24 @@ def test_la_pagina_carga_todos_los_modulos_que_usa_el_motor():
     assert cargados == necesarios
 
 
-def test_ids_que_usa_app_js_existen_en_el_html():
-    app = (RAIZ / "app.js").read_text(encoding="utf-8")
+def test_ids_que_usan_los_scripts_existen_en_el_html():
     html = (RAIZ / "index.html").read_text(encoding="utf-8")
-    for id_ in set(re.findall(r'\$\("([\w-]+)"\)', app)):
-        assert f'id="{id_}"' in html, f"app.js usa #{id_}, que no está en index.html"
+    for script in ("app.js", "tour.js"):
+        codigo = (RAIZ / script).read_text(encoding="utf-8")
+        assert f'src="{script}' in html, script
+        for id_ in set(re.findall(r'\$\("([\w-]+)"\)', codigo)):
+            assert f'id="{id_}"' in html, f"{script} usa #{id_}, que no está en index.html"
+
+
+def test_el_recorrido_usa_el_resultado_vigente_del_motor():
+    from herramientas.exportar_demo import texto
+    assert (RAIZ / "data/demo.json").read_text(encoding="utf-8") == texto(), "regenera con python -m herramientas.exportar_demo"
+
+
+def test_los_enlaces_del_indice_de_pasos_llevan_a_una_seccion():
+    html = (RAIZ / "index.html").read_text(encoding="utf-8")
+    for ancla in set(re.findall(r'href="#([\w-]+)"', html)):
+        assert f'id="{ancla}"' in html, ancla
 
 
 def test_cifras_citadas_coinciden_con_el_motor():

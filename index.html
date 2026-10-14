@@ -10,7 +10,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='20' fill='%231d6b47'%3Efi%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="vendor/fonts/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="tema.css?v=1">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 <script src="tema.js?v=1" data-sitio="fiabilidad"></script>
 <script src="analitica.js?v=1" data-sitio="fiabilidad"></script>
 </head>
@@ -22,18 +22,100 @@
       <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar el tema">noche</button>
       <p class="firma">por <a href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener">Hernán Elías Sánchez</a> · parte de su portafolio
         <em>Control de gestión, construido como software</em></p>
-      <p class="tagline">Cruza los eventos de detención de una planta con su plan y su ejecución de
-        mantenimiento, encuentra dónde la mantención no está funcionando y propone un plan ajustado,
-        con cada cambio justificado. Corre aquí mismo, en el navegador: tus archivos no salen de tu equipo.</p>
+      <p class="tagline">Un modelo que cruza las detenciones de una planta con su plan y su ejecución de
+        mantenimiento, muestra dónde la mantención no está funcionando y propone un plan ajustado, con cada
+        cambio justificado.</p>
     </header>
 
+    <section id="inicio" class="intro">
+      <h2>Equipos que fallan aunque se mantengan</h2>
+      <p class="bajada">Una planta registra cerca de <strong>100.000 detenciones al año</strong>, pero nadie las cruza con lo que
+        hace mantenimiento. Así no se sabe si una mantención sirvió, si se cambian piezas que todavía tenían vida o si una pieza
+        falla antes de lo que promete el fabricante.</p>
+      <p>Este recorrido muestra, con una planta de ejemplo, <strong>qué haría el modelo con sus datos y qué recibiría al
+        final</strong>. Son cinco pasos y toma unos tres minutos.</p>
+      <ol class="indice-pasos">
+        <li><a href="#paso-1"><span>1</span> Usted entrega lo que ya tiene</a></li>
+        <li><a href="#paso-2"><span>2</span> Separamos lo relevante del ruido</a></li>
+        <li><a href="#paso-3"><span>3</span> Respondemos cuatro preguntas</a></li>
+        <li><a href="#paso-4"><span>4</span> Proponemos un plan ajustado</a></li>
+        <li><a href="#paso-5"><span>5</span> Lo que recibe</a></li>
+      </ol>
+      <p class="acciones-carga">
+        <a class="btn primario" href="#paso-1">Comenzar el recorrido ↓</a>
+        <a class="btn" href="#probar">Probar con mis archivos</a>
+      </p>
+      <p class="privacidad">🔒 Todo corre dentro de su navegador o de su propio equipo: los archivos de la planta no se envían a
+        ningún servidor.</p>
+    </section>
+
+    <section id="paso-1" class="paso">
+      <p class="paso-num">Paso 1 de 5</p>
+      <h2>Usted entrega lo que ya tiene</h2>
+      <p>Cuatro archivos que hoy salen del sistema de mantenimiento (por ejemplo, SAP PM) y del registro de turnos. No hay que
+        ordenarlos a mano: el modelo los valida y, si algo no calza, dice exactamente qué fila y qué columna revisar.</p>
+      <div class="fuentes" id="fuentes"></div>
+      <p class="hint">Las fuentes adicionales (horómetros, repuestos, inspecciones en terreno…) se suman con el mismo método:
+        una especificación por archivo y su llave de cruce.</p>
+    </section>
+
+    <section id="paso-2" class="paso">
+      <p class="paso-num">Paso 2 de 5</p>
+      <h2>Separamos lo relevante del ruido</h2>
+      <p>La mayoría de las detenciones son microparadas. Filtramos las que importan y clasificamos cada una en una
+        <strong>taxonomía cerrada</strong>, acordada con su equipo: el modelo nunca inventa una categoría.</p>
+      <div class="embudo" id="embudo"></div>
+      <h3>¿Por qué se detuvo? Eventos relevantes por causa</h3>
+      <div class="barras" id="barras-categorias"></div>
+      <p class="nota-clave" id="nota-revision"></p>
+    </section>
+
+    <section id="paso-3" class="paso">
+      <p class="paso-num">Paso 3 de 5</p>
+      <h2>Respondemos cuatro preguntas</h2>
+      <p>Cruzamos fallas, plan y órdenes de trabajo componente por componente. Cada respuesta trae la evidencia: qué
+        componente, qué fecha y qué OT.</p>
+      <div class="preguntas" id="preguntas"></div>
+    </section>
+
+    <section id="paso-4" class="paso">
+      <p class="paso-num">Paso 4 de 5</p>
+      <h2>Proponemos un plan ajustado, cambio por cambio</h2>
+      <p id="resumen-cambios"></p>
+      <div class="antes-despues" id="antes-despues"></div>
+      <h3>¿Cuánto duran de verdad las piezas?</h3>
+      <p class="hint">La vida de referencia mezcla la del fabricante con la observada en su planta. Con pocas fallas manda la del
+        fabricante; con muchas, manda la realidad (así un caso aislado no cambia el plan).</p>
+      <div class="table-scroll"><table id="tabla-vida-recorrido"></table></div>
+      <h3>Dónde mirar primero</h3>
+      <ol class="prioritarios" id="prioritarios"></ol>
+    </section>
+
+    <section id="paso-5" class="paso">
+      <p class="paso-num">Paso 5 de 5</p>
+      <h2>Lo que recibe</h2>
+      <p>Cada entregable que pide el proyecto ya existe en este demo, con datos de ejemplo. Con sus datos, la diferencia es que la
+        taxonomía y las reglas se ajustan con su equipo.</p>
+      <div class="table-scroll"><table class="entregables">
+        <thead><tr><th>Entregable</th><th>Qué es</th><th>Véalo en el demo</th></tr></thead>
+        <tbody>
+          <tr><td>Script ejecutable del modelo</td><td>Corre con cada nuevo antecedente, en la terminal o en el navegador</td><td><a href="#probar">Probarlo aquí</a> · <a href="https://github.com/h-e-sanchez/fiabilidad">código</a></td></tr>
+          <tr><td>Especificación de archivos de entrada</td><td>Columnas, tipos y llaves de cada archivo, con validación automática</td><td><a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/especificacion-entradas.md">especificación</a></td></tr>
+          <tr><td>Taxonomía validada</td><td>Categorías cerradas de causa, con sus palabras clave</td><td><a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/config/taxonomia.json">taxonomía de ejemplo</a></td></tr>
+          <tr><td>Catálogo de reglas extensible</td><td>Cada regla con sus parámetros; sumar una no cambia el modelo</td><td><a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/config/reglas.json">reglas</a> · <a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/modelo.md">cómo funcionan</a></td></tr>
+          <tr><td>Informe de observaciones</td><td>Brechas, prioridades por componente y vida útil por tipo</td><td>Se descarga al analizar (<code>informe.md</code>)</td></tr>
+          <tr><td>Plan de mantenimiento propuesto</td><td>Mismo formato que su plan, con cada cambio justificado</td><td>Se descarga al analizar (<code>plan_mantenimiento_ajustado.csv</code>)</td></tr>
+          <tr><td>Documentación</td><td>Uso, modelo, reglas y módulo LLM</td><td><a href="https://github.com/h-e-sanchez/fiabilidad#readme">README y docs</a></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
     <section id="probar">
-      <h2>Probar</h2>
-      <p class="hint">Parte con los datos de ejemplo de <strong>Planta Ejemplo SpA</strong> (200 componentes,
-        100.000 eventos en un año, 100% sintéticos) o carga tus cuatro CSV. La primera vez se descarga
-        Python al navegador (unos 6 MB).</p>
+      <h2>Pruébelo</h2>
+      <p class="hint">Analice la planta de ejemplo en vivo o cargue sus cuatro CSV. La primera vez se descarga Python al navegador
+        (unos 6 MB) y el análisis toma segundos.</p>
       <div class="carga">
-        <label for="archivos">Tus archivos (selecciona los cuatro a la vez)</label>
+        <label for="archivos">Sus archivos (seleccione los cuatro a la vez)</label>
         <input type="file" id="archivos" accept=".csv,text/csv" multiple>
         <ul class="detectados" id="detectados"></ul>
         <p class="hint">Se reconocen por el nombre: <code>catalogo_componentes</code>, <code>plan_mantenimiento</code>,
@@ -41,12 +123,12 @@
           <a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/especificacion-entradas.md">especificación de entradas</a>.</p>
       </div>
       <div class="acciones-carga">
-        <button type="button" class="btn primario" id="btn-ejemplo">Analizar los datos de ejemplo</button>
+        <button type="button" class="btn primario" id="btn-ejemplo">Analizar la planta de ejemplo</button>
         <button type="button" class="btn" id="btn-propios" disabled>Analizar mis archivos</button>
         <span class="estado-run" id="estado" role="status"></span>
       </div>
       <p class="privacidad">🔒 Ecosistema cerrado: el análisis corre con Python dentro de esta pestaña. Los archivos se
-        leen en tu equipo y no se envían a ningún servidor.</p>
+        leen en su equipo y no se envían a ningún servidor.</p>
       <ul class="errores" id="errores" hidden></ul>
     </section>
 
@@ -64,11 +146,9 @@
       <div class="table-scroll"><table id="tabla-observaciones"></table></div>
 
       <h3>Plan ajustado: cambios propuestos</h3>
-      <p class="hint">El plan ajustado sale en el mismo formato que el de entrada. Cada cambio trae la regla y la evidencia que lo justifica.</p>
       <div class="table-scroll"><table id="tabla-cambios"></table></div>
 
       <h3>Vida útil por tipo de componente</h3>
-      <p class="hint">Con pocas fallas manda la vida nominal; a medida que se acumulan, manda lo observado (credibilidad, Z = n / (n + k)).</p>
       <div class="table-scroll"><table id="tabla-vida"></table></div>
 
       <h3>Cola de revisión</h3>
@@ -87,28 +167,43 @@
       </p>
     </section>
 
+    <section id="fases">
+      <h2>Cómo trabajaríamos</h2>
+      <div class="fases">
+        <article><p class="paso-num">Fase 1</p><h3>Sus fuentes y su taxonomía</h3><p>Revisamos una muestra de cada fuente,
+          fijamos la especificación de entrada y validamos con su equipo las categorías de causa.</p></article>
+        <article><p class="paso-num">Fase 2</p><h3>Modelo sobre sus datos</h3><p>Reglas calibradas con sus tolerancias, brechas,
+          observaciones y plan ajustado, con pruebas automatizadas y una muestra revisada en terreno.</p></article>
+        <article><p class="paso-num">Fase 3</p><h3>Más fuentes y seguimiento</h3><p>Sumamos las fuentes pendientes y, si sirve,
+          un tablero en Power BI para seguir las brechas mes a mes.</p></article>
+      </div>
+      <p class="hint">Cada fase cierra con un entregable usable y documentado. El LLM es opcional: si se usa, corre en un modelo
+        local y solo revisa los textos que las reglas no alcanzan a clasificar.</p>
+      <p class="acciones-carga"><a class="btn primario" href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener" data-evento="contacto-linkedin">Conversemos →</a></p>
+    </section>
+
     <section id="como-funciona">
-      <h2>Cómo funciona</h2>
-      <ol class="reglas">
-        <li><strong>Ingesta y validación:</strong> cada archivo se revisa contra su especificación; si algo no cumple,
-          se rechaza con la lista de problemas antes de analizar.</li>
-        <li><strong>Filtrado:</strong> solo los eventos de 15 minutos o más (parámetro configurable).</li>
-        <li><strong>Clasificación con taxonomía cerrada:</strong> palabras clave con un puntaje de confianza. Lo que no
-          alcanza la confianza mínima va a la cola de revisión; nunca se inventa una categoría.</li>
-        <li><strong>Cruce:</strong> fallas, plan y OT por componente; la edad de cada pieza se mide desde su último
-          recambio o correctiva.</li>
-        <li><strong>Cuatro reglas de brecha:</strong> mantención no ejecutada o atrasada; falla hasta 15 días después de
-          una mantención; recambio con menos del 60% de la vida útil consumida y sin fallas; falla antes de la vida
-          útil nominal.</li>
-        <li><strong>Plan ajustado:</strong> alarga los recambios redundantes, acorta la inspección y propone recambio
-          preventivo donde la pieza falla antes de tiempo. La vida de referencia mezcla la nominal con la observada por
-          <a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/modelo.md#credibilidad">credibilidad</a>.</li>
-      </ol>
-      <p class="hint">Las reglas y sus parámetros viven en un catálogo extensible (<code>config/reglas.json</code>) y la
-        taxonomía en <code>config/taxonomia.json</code>. Con los datos de ejemplo, los tests exigen encontrar exactamente
-        las 226 brechas sembradas: ni una de menos, ni una de más.</p>
-      <p class="hint"><strong>LLM opcional y local:</strong> desde la terminal, un modelo servido por Ollama en el mismo
-        equipo revisa solo lo que las reglas dejaron sin clasificar, sin salir de la taxonomía. La página no usa LLM.</p>
+      <details>
+        <summary><h2>Para el equipo técnico</h2></summary>
+        <ol class="reglas">
+          <li><strong>Ingesta y validación:</strong> cada archivo se revisa contra su especificación; si algo no cumple,
+            se rechaza con la lista de problemas antes de analizar.</li>
+          <li><strong>Filtrado:</strong> solo los eventos de 15 minutos o más (parámetro configurable).</li>
+          <li><strong>Clasificación con taxonomía cerrada:</strong> palabras clave con un puntaje de confianza. Lo que no
+            alcanza la confianza mínima va a la cola de revisión.</li>
+          <li><strong>Cruce:</strong> fallas, plan y OT por componente; la edad de cada pieza se mide desde su último
+            recambio o correctiva.</li>
+          <li><strong>Cuatro reglas de brecha:</strong> mantención no ejecutada o atrasada; falla hasta 15 días después de
+            una mantención; recambio con menos del 60% de la vida útil consumida y sin fallas; falla antes de la vida
+            útil nominal.</li>
+          <li><strong>Plan ajustado:</strong> alarga los recambios redundantes, acorta la inspección y propone recambio
+            preventivo donde la pieza falla antes de tiempo. La vida de referencia mezcla la nominal con la observada por
+            <a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/modelo.md#credibilidad">credibilidad</a>.</li>
+        </ol>
+        <p class="hint">Python sin dependencias: el mismo código corre en los tests, en la terminal y en esta página con Pyodide.
+          Con los datos de ejemplo, los tests exigen encontrar exactamente las 226 brechas sembradas: ni una de menos, ni una
+          de más. El módulo LLM (Ollama local) está en <a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/llm.md">docs/llm.md</a>.</p>
+      </details>
     </section>
 
     <section id="portafolio" class="portafolio" aria-label="Portafolio">
@@ -165,6 +260,7 @@
       <p class="nota-analitica">Medimos visitas con <a href="https://www.goatcounter.com/">GoatCounter</a>, sin cookies ni datos personales.</p>
     </footer>
   </main>
-  <script src="app.js?v=1"></script>
+  <script src="tour.js?v=1"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>

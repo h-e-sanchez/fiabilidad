@@ -9,6 +9,12 @@ from datetime import timedelta
 
 from .reglas import Contexto, brecha, regla
 
+NOMBRE_TAREA = {"inspeccion": "inspección", "recambio": "recambio", "correctiva": "correctiva"}
+
+
+def tarea(tipo: str) -> str:
+    return NOMBRE_TAREA.get(tipo, tipo)
+
 
 @regla("mantencion_no_ejecutada_o_atrasada")
 def no_ejecutada_o_atrasada(ctx: Contexto, p: dict) -> list[dict]:
@@ -24,24 +30,25 @@ def no_ejecutada_o_atrasada(ctx: Contexto, p: dict) -> list[dict]:
     hasta = ctx.corte - timedelta(days=tolerancia)
     por_programa = {(o["tarea_id"], o["fecha_programada"]): o for o in ctx.ots if o["tarea_id"] and o["fecha_programada"]}
     salida = []
-    for tarea in ctx.plan:
-        if tarea["frecuencia_dias"] <= 0:
+    for t in ctx.plan:
+        if t["frecuencia_dias"] <= 0:
             continue
-        d = tarea["fecha_inicio"]
-        paso = timedelta(days=tarea["frecuencia_dias"])
+        tarea_txt = tarea(t["tipo_tarea"])
+        d = t["fecha_inicio"]
+        paso = timedelta(days=t["frecuencia_dias"])
         while d <= hasta:
             if d >= desde:
-                ref = f"{tarea['tarea_id']}@{d.isoformat()}"
-                ot = por_programa.get((tarea["tarea_id"], d))
+                ref = f"{t['tarea_id']}@{d.isoformat()}"
+                ot = por_programa.get((t["tarea_id"], d))
                 if ot is None:
-                    salida.append(brecha("mantencion_no_ejecutada_o_atrasada", tarea["componente_id"], ref, d,
-                                         f"{tarea['tipo_tarea'].capitalize()} programada el {d.isoformat()} sin OT al corte.",
+                    salida.append(brecha("mantencion_no_ejecutada_o_atrasada", t["componente_id"], ref, d,
+                                         f"{tarea_txt.capitalize()} programada el {d.isoformat()} sin OT al corte.",
                                          subtipo="no_ejecutada"))
                 else:
                     atraso = (ot["fecha_ejecucion"] - d).days
                     if atraso > tolerancia:
-                        salida.append(brecha("mantencion_no_ejecutada_o_atrasada", tarea["componente_id"], ref, d,
-                                             f"{tarea['tipo_tarea'].capitalize()} ejecutada con {atraso} días de atraso "
+                        salida.append(brecha("mantencion_no_ejecutada_o_atrasada", t["componente_id"], ref, d,
+                                             f"{tarea_txt.capitalize()} ejecutada con {atraso} días de atraso "
                                              f"(tolerancia {tolerancia}).", subtipo="atrasada",
                                              ot_relacionada=ot["ot_id"], ejecutor=ot["ejecutor"]))
             d += paso
@@ -61,7 +68,7 @@ def falla_post_mantencion(ctx: Contexto, p: dict) -> list[dict]:
             ot = previas[-1]
             dias = (dia - ot["fecha_ejecucion"]).days
             salida.append(brecha("falla_post_mantencion", f["componente_id"], f["evento_id"], dia,
-                                 f"«{f['descripcion']}» {dias} días después de la OT {ot['ot_id']} ({ot['tipo_tarea']}).",
+                                 f"«{f['descripcion']}» {dias} días después de la OT {ot['ot_id']} ({tarea(ot['tipo_tarea'])}).",
                                  ot_relacionada=ot["ot_id"], ejecutor=ot["ejecutor"]))
     return salida
 

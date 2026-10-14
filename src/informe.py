@@ -53,11 +53,12 @@ def observaciones(ctx: Contexto, brechas: list[dict], cambios: list[dict], venta
         if cambios_comp[comp]:
             frases.append(f"{cambios_comp[comp]} cambio(s) propuesto(s) en el plan")
         otras = len(lista) - (no_ej + atr + post + red + temp)  # reglas agregadas al catálogo
+        texto = "; ".join(frases)
         prioridad = PESO_FALLA * (post + temp) + PESO_OT * (no_ej + atr + otras) + (PESO_REDUNDANTE if red else 0)
         filas.append({"componente_id": comp, "equipo_id": cat.get("equipo_id", ""), "tipo_componente": cat.get("tipo_componente", ""),
                       "prioridad": prioridad, "no_ejecutadas": no_ej, "atrasadas": atr, "fallas_post_mantencion": post,
                       "recambios_redundantes": red, "fallas_antes_vida_util": temp, "cambios_plan": cambios_comp[comp],
-                      "observacion": "; ".join(frases).capitalize() + "."})
+                      "observacion": texto[:1].upper() + texto[1:] + "."})
     return sorted(filas, key=lambda f: (-f["prioridad"], f["componente_id"]))
 
 

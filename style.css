@@ -36,3 +36,60 @@
 #tabla-brechas td:nth-child(2), #tabla-brechas td:nth-child(3), #tabla-brechas td:nth-child(4),
 #tabla-cambios td:nth-child(-n+5), #tabla-observaciones td:nth-child(-n+4) { white-space: nowrap; }
 .reglas li { margin-bottom: var(--sp-2); }
+
+/* Recorrido para quien evalúa el proyecto (tour.js) */
+.intro .bajada { font-size: var(--fs-lg, 1.125rem); }
+.indice-pasos { list-style: none; padding: 0; margin: var(--sp-4) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: var(--sp-2); }
+.indice-pasos a { display: flex; gap: var(--sp-2); align-items: center; padding: var(--sp-2) var(--sp-3); background: var(--surface-2);
+  border: 1px solid transparent; border-radius: var(--r); color: var(--text); text-decoration: none; font-size: var(--fs-sm); }
+.indice-pasos a:hover { border-color: var(--accent); }
+.indice-pasos span { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--accent);
+  color: var(--on-accent); font-weight: 600; flex: none; }
+.paso { border-top: 1px solid var(--border); padding-top: var(--sp-6); }
+.paso-num { color: var(--accent); font-size: var(--fs-sm); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin: 0; }
+.paso h2 { margin-top: 4px; }
+
+.fuentes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: var(--sp-4); margin: var(--sp-4) 0; }
+.fuente { background: var(--surface-2); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); min-width: 0; }
+.fuente h3 { margin: 0 0 4px; }
+.fuente p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); color: var(--muted); }
+table.mini { font-size: 0.78rem; }
+table.mini td, table.mini th { white-space: nowrap; }
+
+.embudo { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3); margin: var(--sp-4) 0; }
+.embudo .etapa { background: var(--surface-2); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); flex: 1 1 160px; }
+.embudo .etapa:last-child { border: 1px solid var(--accent); }
+.embudo .valor, .cifra .valor { font-size: var(--fs-xl); font-weight: 500; display: block; }
+.embudo .rotulo { font-size: var(--fs-sm); color: var(--muted); }
+.flecha { color: var(--faint); font-size: 1.4rem; }
+
+.barras { display: grid; gap: 6px; margin: var(--sp-3) 0; }
+.barra { display: grid; grid-template-columns: minmax(130px, 200px) 1fr 4.5em; gap: var(--sp-2); align-items: center; font-size: var(--fs-sm); }
+.barra .pista { background: var(--surface-2); border-radius: 3px; height: 14px; overflow: hidden; }
+.barra .pista span { display: block; height: 100%; background: var(--faint); }
+.barra.mantencion .pista span, .punto.mantencion { background: var(--accent); }
+.barra.revision .pista span, .punto.revision { background: var(--alerta); }
+.punto { display: inline-block; width: .8em; height: .8em; border-radius: 2px; background: var(--faint); vertical-align: middle; }
+.barra .n { text-align: right; font-variant-numeric: tabular-nums; }
+.nota-clave { background: var(--surface-2); border-left: 3px solid var(--alerta); padding: var(--sp-3) var(--sp-4); border-radius: var(--r); }
+
+.preguntas, .antes-despues, .fases { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: var(--sp-4); margin: var(--sp-4) 0; }
+.preguntas { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.pregunta, .cambio, .fases article { background: var(--surface-2); border-radius: var(--r); padding: var(--sp-4); }
+.pregunta h3, .cambio h3, .fases h3 { margin: 0 0 var(--sp-2); }
+.pregunta .cifra { margin: 0 0 var(--sp-2); color: var(--muted); font-size: var(--fs-sm); }
+.pregunta .cifra .valor { color: var(--alerta); }
+.pregunta p { font-size: var(--fs-sm); }
+.pregunta .ejemplo { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: var(--sp-2) var(--sp-3); }
+.pregunta .ejemplo .etiqueta { display: block; font-family: var(--mono); font-size: 0.72rem; color: var(--faint); margin-bottom: 2px; }
+.pregunta .para-usted { color: var(--accent); margin-bottom: 0; }
+.cambio .ad { display: flex; align-items: center; gap: var(--sp-2); flex-wrap: wrap; margin: var(--sp-2) 0; font-weight: 600; }
+.cambio .antes { color: var(--muted); text-decoration: line-through; }
+.cambio .despues { color: var(--ok); }
+.cambio p { margin: 0; }
+td.malo { color: var(--alerta); font-weight: 600; }
+.prioritarios li { margin-bottom: var(--sp-2); }
+.entregables td:first-child { font-weight: 600; white-space: nowrap; }
+#como-funciona summary { cursor: pointer; }
+#como-funciona summary h2 { display: inline; }
+@media (max-width: 600px) { .barra { grid-template-columns: 110px 1fr 3.5em; } .entregables td:first-child { white-space: normal; } }

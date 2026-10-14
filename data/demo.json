@@ -1,0 +1,408 @@
+{
+ "resumen": {
+  "corte": "2026-09-30",
+  "eventos": 100000,
+  "duracion_minima_min": 15,
+  "relevantes": 10000,
+  "por_categoria": {
+   "operacional": 5394,
+   "externo": 2458,
+   "no_clasificado": 1995,
+   "falla_mecanica": 60,
+   "sobrecalentamiento": 40,
+   "fuga": 29,
+   "falla_instrumentacion": 13,
+   "falla_electrica": 11
+  },
+  "no_clasificados": 1995,
+  "fallas": 153,
+  "componentes": 200,
+  "tareas_plan": 297,
+  "ots": 2015,
+  "brechas": 226,
+  "brechas_por_regla": {
+   "mantencion_no_ejecutada_o_atrasada": 43,
+   "falla_post_mantencion": 29,
+   "recambio_redundante": 122,
+   "falla_antes_vida_util": 32
+  },
+  "componentes_con_brechas": 101,
+  "cambios_plan": 66,
+  "nombres_categorias": {
+   "falla_mecanica": "Falla mecánica",
+   "falla_electrica": "Falla eléctrica",
+   "falla_instrumentacion": "Falla de instrumentación",
+   "fuga": "Fuga",
+   "sobrecalentamiento": "Sobrecalentamiento",
+   "operacional": "Causa operacional",
+   "externo": "Causa externa",
+   "no_clasificado": "No clasificado"
+  }
+ },
+ "textos_en_revision": 8,
+ "subtipos_ejecucion": {
+  "atrasada": 24,
+  "no_ejecutada": 19
+ },
+ "post_por_ejecutor": {
+  "Contratista Sur": 19,
+  "Mantención interna": 5,
+  "Contratista Norte": 5
+ },
+ "muestras": {
+  "eventos_denegacion": {
+   "filas": 100000,
+   "columnas": [
+    "fecha_hora",
+    "equipo_id",
+    "componente_id",
+    "duracion_min",
+    "descripcion"
+   ],
+   "ejemplo": [
+    {
+     "fecha_hora": "2025-10-01 00:12",
+     "equipo_id": "EQ36",
+     "componente_id": "",
+     "duracion_min": "12",
+     "descripcion": "Microparada de línea"
+    },
+    {
+     "fecha_hora": "2025-11-06 07:16",
+     "equipo_id": "EQ31",
+     "componente_id": "C155",
+     "duracion_min": "421",
+     "descripcion": "Correa cortada"
+    },
+    {
+     "fecha_hora": "2025-10-01 02:37",
+     "equipo_id": "EQ05",
+     "componente_id": "",
+     "duracion_min": "57",
+     "descripcion": "Cambio de formato en línea"
+    }
+   ]
+  },
+  "mantenciones_ejecutadas": {
+   "filas": 2015,
+   "columnas": [
+    "ot_id",
+    "componente_id",
+    "tipo_tarea",
+    "fecha_programada",
+    "fecha_ejecucion",
+    "ejecutor"
+   ],
+   "ejemplo": [
+    {
+     "ot_id": "OT00001",
+     "componente_id": "C003",
+     "tipo_tarea": "inspeccion",
+     "fecha_programada": "2025-10-01",
+     "fecha_ejecucion": "2025-10-01",
+     "ejecutor": "Contratista Sur"
+    },
+    {
+     "ot_id": "OT00002",
+     "componente_id": "C096",
+     "tipo_tarea": "inspeccion",
+     "fecha_programada": "2025-10-02",
+     "fecha_ejecucion": "2025-10-01",
+     "ejecutor": "Mantención interna"
+    },
+    {
+     "ot_id": "OT00003",
+     "componente_id": "C034",
+     "tipo_tarea": "inspeccion",
+     "fecha_programada": "2025-10-01",
+     "fecha_ejecucion": "2025-10-02",
+     "ejecutor": "Mantención interna"
+    }
+   ]
+  },
+  "plan_mantenimiento": {
+   "filas": 297,
+   "columnas": [
+    "tarea_id",
+    "componente_id",
+    "tipo_tarea",
+    "frecuencia_dias",
+    "fecha_inicio"
+   ],
+   "ejemplo": [
+    {
+     "tarea_id": "T0001",
+     "componente_id": "C001",
+     "tipo_tarea": "inspeccion",
+     "frecuencia_dias": "45",
+     "fecha_inicio": "2025-10-18"
+    },
+    {
+     "tarea_id": "T0002",
+     "componente_id": "C002",
+     "tipo_tarea": "inspeccion",
+     "frecuencia_dias": "30",
+     "fecha_inicio": "2025-10-04"
+    },
+    {
+     "tarea_id": "T0003",
+     "componente_id": "C002",
+     "tipo_tarea": "recambio",
+     "frecuencia_dias": "132",
+     "fecha_inicio": "2025-10-23"
+    }
+   ]
+  },
+  "catalogo_componentes": {
+   "filas": 200,
+   "columnas": [
+    "componente_id",
+    "tipo_componente",
+    "vida_util_nominal_dias",
+    "fecha_instalacion"
+   ],
+   "ejemplo": [
+    {
+     "componente_id": "C001",
+     "tipo_componente": "rodamiento",
+     "vida_util_nominal_dias": "240",
+     "fecha_instalacion": "2025-09-25"
+    },
+    {
+     "componente_id": "C002",
+     "tipo_componente": "sello_mecanico",
+     "vida_util_nominal_dias": "180",
+     "fecha_instalacion": "2025-06-13"
+    },
+    {
+     "componente_id": "C003",
+     "tipo_componente": "correa",
+     "vida_util_nominal_dias": "150",
+     "fecha_instalacion": "2025-09-23"
+    }
+   ]
+  }
+ },
+ "ejemplos": {
+  "atrasada": {
+   "regla": "mantencion_no_ejecutada_o_atrasada",
+   "subtipo": "atrasada",
+   "componente_id": "C043",
+   "referencia": "T0062@2025-10-01",
+   "fecha": "2025-10-01",
+   "ot_relacionada": "OT00177",
+   "ejecutor": "Mantención interna",
+   "detalle": "Inspección ejecutada con 35 días de atraso (tolerancia 7)."
+  },
+  "no_ejecutada": {
+   "regla": "mantencion_no_ejecutada_o_atrasada",
+   "subtipo": "no_ejecutada",
+   "componente_id": "C075",
+   "referencia": "T0113@2025-10-02",
+   "fecha": "2025-10-02",
+   "ot_relacionada": "",
+   "ejecutor": "",
+   "detalle": "Inspección programada el 2025-10-02 sin OT al corte."
+  },
+  "falla_post_mantencion": {
+   "regla": "falla_post_mantencion",
+   "subtipo": "",
+   "componente_id": "C048",
+   "referencia": "EV010890",
+   "fecha": "2025-11-10",
+   "ot_relacionada": "OT00187",
+   "ejecutor": "Contratista Sur",
+   "detalle": "«Sobrecalentamiento de línea por filtro tapado» 3 días después de la OT OT00187 (inspección)."
+  },
+  "recambio_redundante": {
+   "regla": "recambio_redundante",
+   "subtipo": "",
+   "componente_id": "C123",
+   "referencia": "OT00005",
+   "fecha": "2025-10-02",
+   "ot_relacionada": "OT00005",
+   "ejecutor": "Mantención interna",
+   "detalle": "Pieza cambiada a los 61 días: 41% de su vida útil nominal (150 días), sin fallas desde la anterior."
+  },
+  "falla_antes_vida_util": {
+   "regla": "falla_antes_vida_util",
+   "subtipo": "",
+   "componente_id": "C050",
+   "referencia": "EV010720",
+   "fecha": "2025-11-09",
+   "ot_relacionada": "",
+   "ejecutor": "",
+   "detalle": "«Fuga por sello mecánico» a los 90 días de servicio: 50% de su vida útil nominal (180 días)."
+  }
+ },
+ "cambios_ejemplo": [
+  {
+   "tarea_id": "T0018",
+   "componente_id": "C011",
+   "accion": "modificar",
+   "campo": "frecuencia_dias",
+   "valor_anterior": "49",
+   "valor_nuevo": "150",
+   "regla": "recambio_redundante",
+   "justificacion": "7 recambio(s) con menos vida consumida que el umbral y sin fallas entre ellos. Se lleva al 85% de la vida de referencia del tipo (176,1 días; nominal 150, 27 fallas observadas, Z = 0,844)."
+  },
+  {
+   "tarea_id": "T0001",
+   "componente_id": "C001",
+   "accion": "modificar",
+   "campo": "frecuencia_dias",
+   "valor_anterior": "45",
+   "valor_nuevo": "22",
+   "regla": "falla_antes_vida_util",
+   "justificacion": "1 falla(s) del componente antes de su vida útil nominal; el tipo «rodamiento» acumula 14 y su vida de referencia queda en 202,1 días (nominal 240, Z = 0,828). Se acorta la inspección para detectar el deterioro antes."
+  },
+  {
+   "tarea_id": "NUEVA-001",
+   "componente_id": "C001",
+   "accion": "agregar",
+   "campo": "tarea",
+   "valor_anterior": "",
+   "valor_nuevo": "recambio cada 172 días desde 2026-10-01",
+   "regla": "falla_antes_vida_util",
+   "justificacion": "1 falla(s) del componente antes de su vida útil nominal; el tipo «rodamiento» acumula 14 y su vida de referencia queda en 202,1 días (nominal 240, Z = 0,828). Hoy corre hasta la falla: se propone recambio preventivo al 85% de la vida de referencia."
+  }
+ ],
+ "cambios_por_tipo": {
+  "modificar:recambio_redundante": 28,
+  "modificar:falla_antes_vida_util": 19,
+  "agregar:falla_antes_vida_util": 19
+ },
+ "vida_util": [
+  {
+   "tipo_componente": "contactor",
+   "vida_nominal_dias": 400,
+   "fallas": 7,
+   "vida_media_observada_dias": 446.4,
+   "credibilidad_z": 0.583,
+   "vida_ajustada_dias": 427.1
+  },
+  {
+   "tipo_componente": "correa",
+   "vida_nominal_dias": 150,
+   "fallas": 27,
+   "vida_media_observada_dias": 180.9,
+   "credibilidad_z": 0.844,
+   "vida_ajustada_dias": 176.1
+  },
+  {
+   "tipo_componente": "filtro",
+   "vida_nominal_dias": 90,
+   "fallas": 40,
+   "vida_media_observada_dias": 109.5,
+   "credibilidad_z": 0.889,
+   "vida_ajustada_dias": 107.4
+  },
+  {
+   "tipo_componente": "motor_electrico",
+   "vida_nominal_dias": 720,
+   "fallas": 4,
+   "vida_media_observada_dias": 701.2,
+   "credibilidad_z": 0.444,
+   "vida_ajustada_dias": 711.7
+  },
+  {
+   "tipo_componente": "rodamiento",
+   "vida_nominal_dias": 240,
+   "fallas": 24,
+   "vida_media_observada_dias": 194.2,
+   "credibilidad_z": 0.828,
+   "vida_ajustada_dias": 202.1
+  },
+  {
+   "tipo_componente": "sello_mecanico",
+   "vida_nominal_dias": 180,
+   "fallas": 29,
+   "vida_media_observada_dias": 163.2,
+   "credibilidad_z": 0.853,
+   "vida_ajustada_dias": 165.7
+  },
+  {
+   "tipo_componente": "sensor",
+   "vida_nominal_dias": 300,
+   "fallas": 13,
+   "vida_media_observada_dias": 356.2,
+   "credibilidad_z": 0.722,
+   "vida_ajustada_dias": 340.6
+  },
+  {
+   "tipo_componente": "valvula",
+   "vida_nominal_dias": 365,
+   "fallas": 9,
+   "vida_media_observada_dias": 407.3,
+   "credibilidad_z": 0.643,
+   "vida_ajustada_dias": 392.2
+  }
+ ],
+ "prioritarios": [
+  {
+   "componente_id": "C057",
+   "equipo_id": "EQ12",
+   "tipo_componente": "rodamiento",
+   "prioridad": 10,
+   "no_ejecutadas": 1,
+   "atrasadas": 0,
+   "fallas_post_mantencion": 0,
+   "recambios_redundantes": 0,
+   "fallas_antes_vida_util": 3,
+   "cambios_plan": 2,
+   "observacion": "3 falla(s) antes de la vida útil nominal; 1 mantención(es) no ejecutada(s) y 0 atrasada(s); 2 cambio(s) propuesto(s) en el plan."
+  },
+  {
+   "componente_id": "C050",
+   "equipo_id": "EQ10",
+   "tipo_componente": "sello_mecanico",
+   "prioridad": 9,
+   "no_ejecutadas": 0,
+   "atrasadas": 0,
+   "fallas_post_mantencion": 0,
+   "recambios_redundantes": 0,
+   "fallas_antes_vida_util": 3,
+   "cambios_plan": 2,
+   "observacion": "3 falla(s) antes de la vida útil nominal; 2 cambio(s) propuesto(s) en el plan."
+  },
+  {
+   "componente_id": "C106",
+   "equipo_id": "EQ22",
+   "tipo_componente": "sello_mecanico",
+   "prioridad": 9,
+   "no_ejecutadas": 0,
+   "atrasadas": 0,
+   "fallas_post_mantencion": 0,
+   "recambios_redundantes": 0,
+   "fallas_antes_vida_util": 3,
+   "cambios_plan": 2,
+   "observacion": "3 falla(s) antes de la vida útil nominal; 2 cambio(s) propuesto(s) en el plan."
+  },
+  {
+   "componente_id": "C152",
+   "equipo_id": "EQ31",
+   "tipo_componente": "filtro",
+   "prioridad": 9,
+   "no_ejecutadas": 0,
+   "atrasadas": 0,
+   "fallas_post_mantencion": 2,
+   "recambios_redundantes": 0,
+   "fallas_antes_vida_util": 1,
+   "cambios_plan": 0,
+   "observacion": "1 falla(s) antes de la vida útil nominal; 2 falla(s) hasta 15 días después de una mantención (1 tras OT de Mantención interna)."
+  },
+  {
+   "componente_id": "C193",
+   "equipo_id": "EQ39",
+   "tipo_componente": "rodamiento",
+   "prioridad": 9,
+   "no_ejecutadas": 0,
+   "atrasadas": 0,
+   "fallas_post_mantencion": 0,
+   "recambios_redundantes": 0,
+   "fallas_antes_vida_util": 3,
+   "cambios_plan": 2,
+   "observacion": "3 falla(s) antes de la vida útil nominal; 2 cambio(s) propuesto(s) en el plan."
+  }
+ ]
+}
