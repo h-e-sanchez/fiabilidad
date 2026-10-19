@@ -9,49 +9,85 @@
 <meta property="og:description" content="Mantenciones atrasadas, fallas tras una mantención, recambios redundantes y fallas antes de la vida útil: detectadas y llevadas a un plan ajustado.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='20' fill='%231d6b47'%3Efi%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="vendor/fonts/public-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="tema.css?v=1">
-<link rel="stylesheet" href="style.css?v=2">
-<script src="tema.js?v=1" data-sitio="fiabilidad"></script>
+<link rel="stylesheet" href="tema.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
+<script src="tema.js?v=2" data-sitio="fiabilidad"></script>
 <script src="analitica.js?v=1" data-sitio="fiabilidad"></script>
 </head>
 <body>
+  <header class="barra-sup">
+    <div class="contenedor barra-interior">
+      <a class="marca" href="https://h-e-sanchez.github.io/centinela/">
+        <span class="marca-nombre">Control de gestión, construido como software</span>
+        <span class="marca-bajada">por Hernán Elías Sánchez</span>
+      </a>
+      <nav class="sitios" aria-label="Sitios del portafolio">
+        <a href="https://h-e-sanchez.github.io/centinela/">centinela</a>
+        <a href="https://h-e-sanchez.github.io/consulta/">consulta</a>
+        <a href="https://h-e-sanchez.github.io/cartilla/">cartilla</a>
+        <a href="https://h-e-sanchez.github.io/acervo/">acervo</a>
+        <a href="https://h-e-sanchez.github.io/fiabilidad/" aria-current="page">fiabilidad</a>
+        <a href="https://h-e-sanchez.github.io/cuadratura/">cuadratura</a>
+      </nav>
+      <div class="barra-iconos">
+        <button type="button" id="theme-toggle" class="icono-btn" aria-label="Cambiar el tema">
+          <svg class="luna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13a9 9 0 0 1-9.9-9.9A9 9 0 1 0 20.9 13Z"/></svg>
+          <svg class="sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <a class="icono-btn" href="https://github.com/h-e-sanchez/fiabilidad" aria-label="Código de fiabilidad en GitHub" title="Código en GitHub"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="en-pagina" aria-label="En esta página">
+    <div class="contenedor">
+      <p class="en-pagina-titulo">En esta página</p>
+      <ul>
+        <li><a href="#inicio">El recorrido</a></li>
+        <li><a href="#probar">Pruébalo</a></li>
+        <li><a href="#fases">Cómo trabajaríamos</a></li>
+        <li><a href="#como-funciona">Para el equipo técnico</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+      </ul>
+    </div>
+  </nav>
   <main class="ancho">
-    <header class="site-header">
-      <p class="etiqueta-sitio">Confiabilidad de activos · Python en el navegador</p>
-      <h1>fiabilidad</h1>
-      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar el tema">noche</button>
-      <p class="firma">por <a href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener">Hernán Elías Sánchez</a> · parte de su portafolio
-        <em>Control de gestión, construido como software</em></p>
-      <p class="tagline">Un modelo que cruza las detenciones de una planta con su plan y su ejecución de
+    <section class="portada" id="portada">
+      <p class="eyebrow"><strong>fiabilidad</strong> · confiabilidad de activos, Python en el navegador</p>
+      <h1>Qué mantención evita fallas, y cuál no.</h1>
+      <p class="lede">Un modelo que cruza las detenciones de una planta con su plan y su ejecución de
         mantenimiento, muestra dónde la mantención no está funcionando y propone un plan ajustado, con cada
         cambio justificado.</p>
-    </header>
+      <div class="acciones">
+        <a class="btn primario" href="#paso-1">Comenzar el recorrido</a>
+        <a class="enlace-texto" href="#probar">Probar con tus archivos ↓</a>
+      </div>
+      <p class="firma">por <a href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener">Hernán Elías Sánchez</a> · Ingeniero Civil Industrial</p>
+    </section>
+
 
     <section id="inicio" class="intro">
       <h2>Equipos que fallan aunque se mantengan</h2>
       <p class="bajada">Una planta registra cerca de <strong>100.000 detenciones al año</strong>, pero nadie las cruza con lo que
         hace mantenimiento. Así no se sabe si una mantención sirvió, si se cambian piezas que todavía tenían vida o si una pieza
         falla antes de lo que promete el fabricante.</p>
-      <p>Este recorrido muestra, con una planta de ejemplo, <strong>qué haría el modelo con sus datos y qué recibiría al
+      <p>Este recorrido muestra, con una planta de ejemplo, <strong>qué haría el modelo con tus datos y qué recibirías al
         final</strong>. Son cinco pasos y toma unos tres minutos.</p>
       <ol class="indice-pasos">
-        <li><a href="#paso-1"><span>1</span> Usted entrega lo que ya tiene</a></li>
+        <li><a href="#paso-1"><span>1</span> Entregas lo que ya tienes</a></li>
         <li><a href="#paso-2"><span>2</span> Separamos lo relevante del ruido</a></li>
         <li><a href="#paso-3"><span>3</span> Respondemos cuatro preguntas</a></li>
         <li><a href="#paso-4"><span>4</span> Proponemos un plan ajustado</a></li>
-        <li><a href="#paso-5"><span>5</span> Lo que recibe</a></li>
+        <li><a href="#paso-5"><span>5</span> Lo que recibes</a></li>
       </ol>
-      <p class="acciones-carga">
-        <a class="btn primario" href="#paso-1">Comenzar el recorrido ↓</a>
-        <a class="btn" href="#probar">Probar con mis archivos</a>
-      </p>
-      <p class="privacidad">🔒 Todo corre dentro de su navegador o de su propio equipo: los archivos de la planta no se envían a
+      <p class="privacidad">🔒 Todo corre dentro de tu navegador o de tu propio equipo: los archivos de la planta no se envían a
         ningún servidor.</p>
     </section>
 
     <section id="paso-1" class="paso">
       <p class="paso-num">Paso 1 de 5</p>
-      <h2>Usted entrega lo que ya tiene</h2>
+      <h2>Entregas lo que ya tienes</h2>
       <p>Cuatro archivos que hoy salen del sistema de mantenimiento (por ejemplo, SAP PM) y del registro de turnos. No hay que
         ordenarlos a mano: el modelo los valida y, si algo no calza, dice exactamente qué fila y qué columna revisar.</p>
       <div class="fuentes" id="fuentes"></div>
@@ -63,7 +99,7 @@
       <p class="paso-num">Paso 2 de 5</p>
       <h2>Separamos lo relevante del ruido</h2>
       <p>La mayoría de las detenciones son microparadas. Filtramos las que importan y clasificamos cada una en una
-        <strong>taxonomía cerrada</strong>, acordada con su equipo: el modelo nunca inventa una categoría.</p>
+        <strong>taxonomía cerrada</strong>, acordada con tu equipo: el modelo nunca inventa una categoría.</p>
       <div class="embudo" id="embudo"></div>
       <h3>¿Por qué se detuvo? Eventos relevantes por causa</h3>
       <div class="barras" id="barras-categorias"></div>
@@ -84,7 +120,7 @@
       <p id="resumen-cambios"></p>
       <div class="antes-despues" id="antes-despues"></div>
       <h3>¿Cuánto duran de verdad las piezas?</h3>
-      <p class="hint">La vida de referencia mezcla la del fabricante con la observada en su planta. Con pocas fallas manda la del
+      <p class="hint">La vida de referencia mezcla la del fabricante con la observada en tu planta. Con pocas fallas manda la del
         fabricante; con muchas, manda la realidad (así un caso aislado no cambia el plan).</p>
       <div class="table-scroll"><table id="tabla-vida-recorrido"></table></div>
       <h3>Dónde mirar primero</h3>
@@ -93,29 +129,29 @@
 
     <section id="paso-5" class="paso">
       <p class="paso-num">Paso 5 de 5</p>
-      <h2>Lo que recibe</h2>
-      <p>Cada entregable que pide el proyecto ya existe en este demo, con datos de ejemplo. Con sus datos, la diferencia es que la
-        taxonomía y las reglas se ajustan con su equipo.</p>
+      <h2>Lo que recibes</h2>
+      <p>Cada entregable que pide el proyecto ya existe en este demo, con datos de ejemplo. Con tus datos, la diferencia es que la
+        taxonomía y las reglas se ajustan con tu equipo.</p>
       <div class="table-scroll"><table class="entregables">
-        <thead><tr><th>Entregable</th><th>Qué es</th><th>Véalo en el demo</th></tr></thead>
+        <thead><tr><th>Entregable</th><th>Qué es</th><th>Míralo en el demo</th></tr></thead>
         <tbody>
           <tr><td>Script ejecutable del modelo</td><td>Corre con cada nuevo antecedente, en la terminal o en el navegador</td><td><a href="#probar">Probarlo aquí</a> · <a href="https://github.com/h-e-sanchez/fiabilidad">código</a></td></tr>
           <tr><td>Especificación de archivos de entrada</td><td>Columnas, tipos y llaves de cada archivo, con validación automática</td><td><a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/especificacion-entradas.md">especificación</a></td></tr>
           <tr><td>Taxonomía validada</td><td>Categorías cerradas de causa, con sus palabras clave</td><td><a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/config/taxonomia.json">taxonomía de ejemplo</a></td></tr>
           <tr><td>Catálogo de reglas extensible</td><td>Cada regla con sus parámetros; sumar una no cambia el modelo</td><td><a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/config/reglas.json">reglas</a> · <a href="https://github.com/h-e-sanchez/fiabilidad/blob/main/docs/modelo.md">cómo funcionan</a></td></tr>
           <tr><td>Informe de observaciones</td><td>Brechas, prioridades por componente y vida útil por tipo</td><td>Se descarga al analizar (<code>informe.md</code>)</td></tr>
-          <tr><td>Plan de mantenimiento propuesto</td><td>Mismo formato que su plan, con cada cambio justificado</td><td>Se descarga al analizar (<code>plan_mantenimiento_ajustado.csv</code>)</td></tr>
+          <tr><td>Plan de mantenimiento propuesto</td><td>Mismo formato que tu plan, con cada cambio justificado</td><td>Se descarga al analizar (<code>plan_mantenimiento_ajustado.csv</code>)</td></tr>
           <tr><td>Documentación</td><td>Uso, modelo, reglas y módulo LLM</td><td><a href="https://github.com/h-e-sanchez/fiabilidad#readme">README y docs</a></td></tr>
         </tbody>
       </table></div>
     </section>
 
     <section id="probar">
-      <h2>Pruébelo</h2>
-      <p class="hint">Analice la planta de ejemplo en vivo o cargue sus cuatro CSV. La primera vez se descarga Python al navegador
+      <h2>Pruébalo</h2>
+      <p class="hint">Analiza la planta de ejemplo en vivo o carga tus cuatro CSV. La primera vez se descarga Python al navegador
         (unos 6 MB) y el análisis toma segundos.</p>
       <div class="carga">
-        <label for="archivos">Sus archivos (seleccione los cuatro a la vez)</label>
+        <label for="archivos">Tus archivos (selecciona los cuatro a la vez)</label>
         <input type="file" id="archivos" accept=".csv,text/csv" multiple>
         <ul class="detectados" id="detectados"></ul>
         <p class="hint">Se reconocen por el nombre: <code>catalogo_componentes</code>, <code>plan_mantenimiento</code>,
@@ -128,7 +164,7 @@
         <span class="estado-run" id="estado" role="status"></span>
       </div>
       <p class="privacidad">🔒 Ecosistema cerrado: el análisis corre con Python dentro de esta pestaña. Los archivos se
-        leen en su equipo y no se envían a ningún servidor.</p>
+        leen en tu equipo y no se envían a ningún servidor.</p>
       <ul class="errores" id="errores" hidden></ul>
     </section>
 
@@ -170,9 +206,9 @@
     <section id="fases">
       <h2>Cómo trabajaríamos</h2>
       <div class="fases">
-        <article><p class="paso-num">Fase 1</p><h3>Sus fuentes y su taxonomía</h3><p>Revisamos una muestra de cada fuente,
-          fijamos la especificación de entrada y validamos con su equipo las categorías de causa.</p></article>
-        <article><p class="paso-num">Fase 2</p><h3>Modelo sobre sus datos</h3><p>Reglas calibradas con sus tolerancias, brechas,
+        <article><p class="paso-num">Fase 1</p><h3>Tus fuentes y tu taxonomía</h3><p>Revisamos una muestra de cada fuente,
+          fijamos la especificación de entrada y validamos con tu equipo las categorías de causa.</p></article>
+        <article><p class="paso-num">Fase 2</p><h3>Modelo sobre tus datos</h3><p>Reglas calibradas con tus tolerancias, brechas,
           observaciones y plan ajustado, con pruebas automatizadas y una muestra revisada en terreno.</p></article>
         <article><p class="paso-num">Fase 3</p><h3>Más fuentes y seguimiento</h3><p>Sumamos las fuentes pendientes y, si sirve,
           un tablero en Power BI para seguir las brechas mes a mes.</p></article>
@@ -208,32 +244,44 @@
 
     <section id="portafolio" class="portafolio" aria-label="Portafolio">
       <h2>Portafolio</h2>
-      <p class="hint"><strong>Control de gestión, construido como software</strong> · sitios de
-        Hernán Elías Sánchez: cada uno muestra una parte del mismo oficio.</p>
+      <p class="seccion-intro">Seis sitios, un mismo oficio: control de gestión construido como software. Todos usan datos
+        100% sintéticos.</p>
       <div class="portafolio-compartido">
         <article class="sitio">
+          <h3><a href="https://h-e-sanchez.github.io/centinela/">centinela</a></h3>
           <p class="sitio-rol">La vitrina</p>
-          <h3>centinela</h3>
-          <p class="sitio-desc">Reportes Power BI de control de gestión, personas, compensaciones, pricing, capital de trabajo, contratistas y mantenimiento, con datos sintéticos, el modelo y el DAX a la vista.</p>
-          <p class="sitio-acciones"><a class="sitio-boton" href="https://h-e-sanchez.github.io/centinela/">Ver centinela →</a> <a class="sitio-github" href="https://github.com/h-e-sanchez/centinela"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></p>
+          <p class="sitio-desc">Reportes Power BI de control de gestión, personas, compensaciones, pricing, capital de trabajo, contratistas y mantenimiento, con el modelo y el DAX a la vista.</p>
+          <p class="sitio-acciones"><a href="https://github.com/h-e-sanchez/centinela">Código en GitHub</a></p>
         </article>
         <article class="sitio">
+          <h3><a href="https://h-e-sanchez.github.io/consulta/">consulta</a></h3>
           <p class="sitio-rol">El taller</p>
-          <h3>consulta</h3>
           <p class="sitio-desc">SQL, perfilado y gráficos sobre CSV, Parquet o Excel, sin que el archivo salga de tu equipo.</p>
-          <p class="sitio-acciones"><a class="sitio-boton" href="https://h-e-sanchez.github.io/consulta/">Abrir consulta →</a> <a class="sitio-github" href="https://github.com/h-e-sanchez/consulta"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></p>
+          <p class="sitio-acciones"><a href="https://github.com/h-e-sanchez/consulta">Código en GitHub</a></p>
         </article>
         <article class="sitio">
+          <h3><a href="https://h-e-sanchez.github.io/cartilla/">cartilla</a></h3>
           <p class="sitio-rol">El manual</p>
-          <h3>cartilla</h3>
           <p class="sitio-desc">Python y pandas para quien viene de Excel, con ejemplos que se ejecutan en el navegador.</p>
-          <p class="sitio-acciones"><a class="sitio-boton" href="https://h-e-sanchez.github.io/cartilla/">Abrir cartilla →</a> <a class="sitio-github" href="https://github.com/h-e-sanchez/cartilla"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></p>
+          <p class="sitio-acciones"><a href="https://github.com/h-e-sanchez/cartilla">Código en GitHub</a></p>
+        </article>
+        <article class="sitio">
+          <h3><a href="https://h-e-sanchez.github.io/acervo/">acervo</a></h3>
+          <p class="sitio-rol">El gobierno de datos</p>
+          <p class="sitio-desc">Modelo relacional, protección de datos personales, API REST y catálogo de metadatos.</p>
+          <p class="sitio-acciones"><a href="https://github.com/h-e-sanchez/acervo">Código en GitHub</a></p>
         </article>
         <article class="sitio actual" aria-current="page">
-          <p class="sitio-rol">El modelo <span class="estas-aqui">Estás aquí</span></p>
-          <h3>fiabilidad</h3>
+          <h3><a href="#portada">fiabilidad</a></h3>
+          <p class="sitio-rol">El modelo</p>
           <p class="sitio-desc">Mantenimiento contra fallas: cuatro brechas detectadas y un plan ajustado con cada cambio justificado.</p>
-          <p class="sitio-acciones"><a class="sitio-boton" href="#">Volver al inicio ↑</a> <a class="sitio-github" href="https://github.com/h-e-sanchez/fiabilidad"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></p>
+          <p class="sitio-acciones"><a href="https://github.com/h-e-sanchez/fiabilidad">Código en GitHub</a></p>
+        </article>
+        <article class="sitio">
+          <h3><a href="https://h-e-sanchez.github.io/cuadratura/">cuadratura</a></h3>
+          <p class="sitio-rol">La integración</p>
+          <p class="sitio-desc">Nómina contra SAP: rechazos, asiento de carga, reclasificaciones y un puente que cierra en $0.</p>
+          <p class="sitio-acciones"><a href="https://github.com/h-e-sanchez/cuadratura">Código en GitHub</a></p>
         </article>
       </div>
     </section>
@@ -260,7 +308,7 @@
       <p class="nota-analitica">Medimos visitas con <a href="https://www.goatcounter.com/">GoatCounter</a>, sin cookies ni datos personales.</p>
     </footer>
   </main>
-  <script src="tour.js?v=1"></script>
-  <script src="app.js?v=2"></script>
+  <script src="tour.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

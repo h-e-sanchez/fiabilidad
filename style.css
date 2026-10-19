@@ -20,7 +20,7 @@
 .errores[hidden], .advertencias[hidden], #resultados[hidden] { display: none; }
 
 .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--sp-3); margin: var(--sp-4) 0; }
-.kpi { background: var(--surface-2); border: 1px solid transparent; border-radius: var(--r); padding: var(--sp-3) var(--sp-4); }
+.kpi { border: 1px solid var(--border); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); }
 .kpi .valor { font-size: var(--fs-xl); font-weight: 500; display: block; }
 .kpi .rotulo { font-size: var(--fs-sm); color: var(--muted); }
 .kpi.ok .valor { color: var(--ok); }
@@ -40,24 +40,22 @@
 /* Recorrido para quien evalúa el proyecto (tour.js) */
 .intro .bajada { font-size: var(--fs-lg, 1.125rem); }
 .indice-pasos { list-style: none; padding: 0; margin: var(--sp-4) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: var(--sp-2); }
-.indice-pasos a { display: flex; gap: var(--sp-2); align-items: center; padding: var(--sp-2) var(--sp-3); background: var(--surface-2);
-  border: 1px solid transparent; border-radius: var(--r); color: var(--text); text-decoration: none; font-size: var(--fs-sm); }
+.indice-pasos a { display: flex; gap: var(--sp-2); align-items: center; padding: var(--sp-2) var(--sp-3); border: 1px solid var(--border); border-radius: var(--r); color: var(--text); text-decoration: none; font-size: var(--fs-sm); }
 .indice-pasos a:hover { border-color: var(--accent); }
 .indice-pasos span { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--accent);
   color: var(--on-accent); font-weight: 600; flex: none; }
-.paso { border-top: 1px solid var(--border); padding-top: var(--sp-6); }
-.paso-num { color: var(--accent); font-size: var(--fs-sm); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin: 0; }
 .paso h2 { margin-top: 4px; }
+.paso-num { color: var(--accent); font-size: var(--fs-sm); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin: 0; }
 
 .fuentes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: var(--sp-4); margin: var(--sp-4) 0; }
-.fuente { background: var(--surface-2); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); min-width: 0; }
+.fuente { border: 1px solid var(--border); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); min-width: 0; }
 .fuente h3 { margin: 0 0 4px; }
 .fuente p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); color: var(--muted); }
 table.mini { font-size: 0.78rem; }
 table.mini td, table.mini th { white-space: nowrap; }
 
 .embudo { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3); margin: var(--sp-4) 0; }
-.embudo .etapa { background: var(--surface-2); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); flex: 1 1 160px; }
+.embudo .etapa { border: 1px solid var(--border); border-radius: var(--r); padding: var(--sp-3) var(--sp-4); flex: 1 1 160px; }
 .embudo .etapa:last-child { border: 1px solid var(--accent); }
 .embudo .valor, .cifra .valor { font-size: var(--fs-xl); font-weight: 500; display: block; }
 .embudo .rotulo { font-size: var(--fs-sm); color: var(--muted); }
@@ -75,7 +73,7 @@ table.mini td, table.mini th { white-space: nowrap; }
 
 .preguntas, .antes-despues, .fases { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: var(--sp-4); margin: var(--sp-4) 0; }
 .preguntas { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
-.pregunta, .cambio, .fases article { background: var(--surface-2); border-radius: var(--r); padding: var(--sp-4); }
+.pregunta, .cambio, .fases article { border: 1px solid var(--border); border-radius: var(--r); padding: var(--sp-4); }
 .pregunta h3, .cambio h3, .fases h3 { margin: 0 0 var(--sp-2); }
 .pregunta .cifra { margin: 0 0 var(--sp-2); color: var(--muted); font-size: var(--fs-sm); }
 .pregunta .cifra .valor { color: var(--alerta); }

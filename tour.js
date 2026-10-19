@@ -82,7 +82,7 @@
   function cambios(d) {
     var s = d.resumen;
     var c = d.cambios_por_tipo;
-    $("resumen-cambios").innerHTML = "El plan ajustado sale <strong>en el mismo formato que su plan</strong>, con <strong>" + s.cambios_plan +
+    $("resumen-cambios").innerHTML = "El plan ajustado sale <strong>en el mismo formato que tu plan</strong>, con <strong>" + s.cambios_plan +
       " cambios</strong>: " + (c["modificar:recambio_redundante"] || 0) + " recambios que se espacian, " + (c["modificar:falla_antes_vida_util"] || 0) +
       " inspecciones que se acortan y " + (c["agregar:falla_antes_vida_util"] || 0) + " recambios preventivos nuevos. Cada uno trae la regla y la evidencia que lo justifica.";
     var titulos = { "recambio_redundante": "Espaciar un recambio", "falla_antes_vida_util": "Inspeccionar más seguido" };
